@@ -5,22 +5,6 @@ function History() {
     <S.Wrapper>
       <S.HistoryWrapper>
         <S.HistoryContent>
-          <div className="title">학력</div>
-          <S.HistoryList>
-            {HISTORY_CONSTANT.edcutaion.map((item) => (
-              <S.HistoryItem key={item.name}>
-                <S.Nmae className="name">{item.name}</S.Nmae>
-                <hr />
-                <S.Info>
-                  <p className="major">{item.major}</p>
-                  <span>{item.date}</span>
-                  {item.score && <span>{item.score}</span>}
-                </S.Info>
-              </S.HistoryItem>
-            ))}
-          </S.HistoryList>
-        </S.HistoryContent>
-        <S.HistoryContent>
           <div className="title">경력</div>
           <S.HistoryList>
             {HISTORY_CONSTANT.career.map((item) => (
