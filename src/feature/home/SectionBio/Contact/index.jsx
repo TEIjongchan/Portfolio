@@ -17,10 +17,6 @@ function Contact() {
           Blog
         </a>
         <hr />
-        <a href="https://github.com/rkato0128" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
-        <hr />
         <a
           href="https://www.linkedin.com/in/동엽-정-42ba44206/"
           target="_blank"
