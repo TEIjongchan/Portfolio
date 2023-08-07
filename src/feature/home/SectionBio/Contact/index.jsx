@@ -6,11 +6,11 @@ function Contact() {
       <S.Title>Contact me</S.Title>
       <S.Email>
         <img src={"/images/icon/Icon_Mail.svg"} />
-        rkato0128@naver.com
+        hshshs6349@gmail.com
       </S.Email>
       <S.ContactList>
         <a
-          href="https://do-workspace.tistory.com/"
+          href="https://01093305815.tistory.com/"
           target="_blank"
           rel="noreferrer"
         >
@@ -18,7 +18,7 @@ function Contact() {
         </a>
         <hr />
         <a
-          href="https://www.linkedin.com/in/동엽-정-42ba44206/"
+          href="https://www.linkedin.com/in/%EC%A2%85%EC%B0%AC-%EC%9D%B4-27a91b19a/"
           target="_blank"
           rel="noreferrer"
         >

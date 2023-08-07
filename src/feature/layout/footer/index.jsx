@@ -6,16 +6,16 @@ function Footer() {
       <S.Wrapper>
         <S.ProfileImg src="/images/Profile.png" alt="profile" />
         <S.ProfileInfo>
-          <S.Name>정동엽</S.Name>
+          <S.Name>이종찬</S.Name>
           <S.Job>Game UI/UX Designer</S.Job>
           <S.Email>
             <img src="/images/icon/Icon_Mail.svg" alt="mail icon" />
-            rkato0128@naver.com
+            hshshs6349@gmail.com
           </S.Email>
         </S.ProfileInfo>
         <S.ContactList>
           <a
-            href="https://do-workspace.tistory.com/"
+            href="https://01093305815.tistory.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -23,7 +23,7 @@ function Footer() {
           </a>
           <hr />
           <a
-            href="https://www.linkedin.com/in/동엽-정-42ba44206/"
+            href="https://www.linkedin.com/in/%EC%A2%85%EC%B0%AC-%EC%9D%B4-27a91b19a/"
             target="_blank"
             rel="noreferrer"
           >

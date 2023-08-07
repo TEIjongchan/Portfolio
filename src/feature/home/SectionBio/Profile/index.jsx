@@ -7,7 +7,7 @@ function Profile() {
     <S.Profile>
       <S.ProfileImg src={"/images/Profile_L.png"} alt="profile" />
       <S.Info>
-        <S.Name>정동엽</S.Name>
+        <S.Name>이종찬</S.Name>
         <S.Job>Game UI/UX Designer</S.Job>
         <S.Title>{HISTORY_CONSTANT.title}</S.Title>
         <S.SubTitle

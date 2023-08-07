@@ -1,173 +1,252 @@
 export const PORTFOLIO_CONSTANT = [
   {
-    name: "수집형 RPG 컨셉",
-    genre: ["모바일", "수집형 RPG", "SF"],
-    date: "19.12. - 20.02.",
+    name: "다크판타지 RPG 컨셉",
+    genre: ["콘솔", "다크판타지", "RPG"],
+    date: "23.05. - 23.08.",
     listDescription: "",
     description:
-      "사선 형태와 남색을 SF 컨셉의 핵심 비주얼 요소로 잡고,<br/>세로 인터페이스에서의 편의성을 중점으로 작업하였습니다.",
+      "게임 ‘킹아서 나이츠 테일’을 디스토피아적인 분위기의 RPG로서 재해석하여 제작하였습니다.",
     iconUrl: [
-      "/images/icon/Icon_Tool_Ae.png",
+      "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
     ],
     imageUrl: [
-      "/images/portfolio/ProjectCC/1_Ingame UI.png",
-      "/images/portfolio/ProjectCC/2_Result_motion.gif",
-      "/images/portfolio/ProjectCC/3_Shop.png",
-      "/images/portfolio/ProjectCC/4_CharacterInfo.png",
-    ],
-    type: "vertical",
-    // detail page
-    source: "",
-    keyword: ["세로형", "사이버틱", "홀로그램"],
-    keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
-    colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
-    detailImage: [
-      {
-        url: "/images/portfolio/ProjectCC/1_Ingame UI.png",
-        text: "플레이 화면",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/ProjectCC/2_Result_motion.gif",
-        text: "전투 결과",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/ProjectCC/3_Shop.png",
-        text: "캐릭터 뽑기",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/ProjectCC/4_CharacterInfo.png",
-        text: "캐릭터 정보",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/ProjectCC/5_Skill.png",
-        text: "스킬 성장",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/ProjectCC/6_Resources.jpg",
-        text: "UI 리소스",
-        type: "vertical",
-      },
-    ],
-  },
-
-  {
-    name: "세키로 모바일",
-    genre: ["모바일", "MORPG", "판타지"],
-    date: "20.03. - 20.05.",
-    listDescription: "",
-    description:
-      "모바일이라는 기기에 맞게, 세키로의 동양적인 분위기를<br/>대중적인 심플함으로 나타내는 것에 집중하며 UI를 제작하였습니다.",
-    iconUrl: ["/images/icon/Icon_Tool_Ps.png", "/images/icon/Icon_Tool_Ai.png"],
-    imageUrl: [
-      "/images/portfolio/SekiroM/1_Ingame.png",
-      "/images/portfolio/SekiroM/2_Main.png",
+      "/images/portfolio/King/King_0.png",
+      "/images/portfolio/King/King_1.png",
     ],
     type: "horizontal",
-    source: "캐릭터와 배경, 아이템 이미지는 세키로의 리소스를 사용하였습니다.",
-    keyword: ["동양적인", "어두운", "심플한"],
-    keyShape: "/images/portfolio/SekiroM/KeyShape_Sekiro.png",
-    colorPalette: "/images/portfolio/SekiroM/Color Palette_Sekiro.png",
+    // detail page
+    source: "",
+    // keyword: ["가로형", "다크판타지", "RPG"],
+    // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
+    // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
     detailImage: [
       {
-        url: "/images/portfolio/SekiroM/1_Ingame.png",
-        text: "플레이 화면",
+        url: "/images/portfolio/King/King_0.png",
+        text: "메인화면",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/SekiroM/2_Main.png",
-        text: "메인 화면",
+        url: "/images/portfolio/King/King_1.png",
+        text: "캐릭터 선택",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/SekiroM/3_Inventory.png",
-        text: "장비 화면",
+        url: "/images/portfolio/King/King_2.webp",
+        text: "장비창",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/SekiroM/4_Stage.png",
-        text: "스테이지 선택",
+        url: "/images/portfolio/King/King_3.png",
+        text: "캐릭터 정보",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/SekiroM/5_Mission.png",
-        text: "임무 화면",
+        url: "/images/portfolio/King/King_4.webp",
+        text: "스킬 성장",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/SekiroM/6_Resources.jpg",
-        text: "UI 리소스",
+        url: "/images/portfolio/King/King_5.png",
+        text: "영혼 업그레이드",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/King/King_6.png",
+        text: "월드맵",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/King/King_7.webp",
+        text: "보스 HP 연출",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/King/King_8.webp",
+        text: "공지 알림",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/King/King_9.webp",
+        text: "퀘스트화면 오픈",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/King/King_10.webp",
+        text: "보스처치연출",
         type: "horizontal",
       },
     ],
   },
 
   {
-    name: "별의 커비 퍼즐",
-    genre: ["모바일", "퍼즐", "캐주얼"],
-    date: "19.10. - 19.12.",
+    name: "서브컬처 RPG 컨셉",
+    genre: ["콘솔", "서브컬처", "RPG"],
+    date: "23.03. - 23.05.",
     listDescription: "",
     description:
-      "별의 커비 IP를 바탕으로, 캐주얼 게임 컨셉으로 디자인을 진행했습니다.<br/>아케이드 게임기의 디자인적 요소를 UI에 녹여내려고 노력했습니다.",
+      "서브컬처 게임인 ‘워더링 웨이브’를 컨셉으로 어두운느낌의 기계적인 연출을 강조하여 제작하였습니다.",
     iconUrl: [
-      "/images/icon/Icon_Tool_Ae.png",
+      "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
     ],
     imageUrl: [
-      "/images/portfolio/Kirby/1_Ingame_Motion.gif",
-      "/images/portfolio/Kirby/2_Main.png",
-      "/images/portfolio/Kirby/3_Stage.png",
-      "/images/portfolio/Kirby/4_Character List.png",
+      "/images/portfolio/WhtheringWaves/WhtheringWaves_0.webp",
+      "/images/portfolio/WhtheringWaves/WhtheringWaves_1.png",
     ],
-    type: "vertical",
-    source:
-      "캐릭터 이미지는 별의 커비 스타 얼라이즈의 리소스를 사용하였습니다.",
-    keyword: ["캐주얼", "아케이드 게임기", "음식"],
-    keyShape: "/images/portfolio/Kirby/KeyShape_Kirby.png",
-    colorPalette: "/images/portfolio/Kirby/Color Palette_Kirby.png",
+    type: "horizontal",
+    // detail page
+    source: "",
+    // keyword: ["가로형", "다크판타지", "RPG"],
+    // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
+    // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
     detailImage: [
       {
-        url: "/images/portfolio/Kirby/1_Ingame_Motion.gif",
-        text: "플레이 화면",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_0.webp",
+        text: "메인화면",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/Kirby/2_Main.png",
-        text: "메인 화면",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_1.png",
+        text: "인게임",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/Kirby/3_Stage.png",
-        text: "스테이지 준비",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_2.png",
+        text: "대화창",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/Kirby/4_Character List.png",
-        text: "캐릭터 목록",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_3.webp",
+        text: "스킬업그레이드",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/Kirby/5_Shop.png",
-        text: "상점",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_4.webp",
+        text: "퀘스트",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/Kirby/6_Resources.jpg",
-        text: "UI 리소스",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_5.png",
+        text: "장비창",
+        type: "horizontal",
       },
       {
-        url: "/images/portfolio/Kirby/7_Illust.png",
-        text: "배경 일러스트",
-        type: "vertical",
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_6.webp",
+        text: "월드맵",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_7.webp",
+        text: "스토리",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_8.webp",
+        text: "버프디버프",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/WhtheringWaves/WhtheringWaves_9.webp",
+        text: "스킬사용",
+        type: "horizontal",
       },
     ],
   },
+
+  {
+    name: "데몬즈소울 모바일",
+    genre: ["모바일", "다크판타지", "RPG"],
+    date: "21.11. - 22.02.",
+    listDescription: "",
+    description:
+      "어두운 분위기의 중세 판타지 콘솔 게임인 ‘데몬즈소울’ 을 모바일 형식으로 재해석 하여 제작하였습니다.",
+    iconUrl: [
+      "/images/icon/Icon_Tool_Unity.png",
+      "/images/icon/Icon_Tool_Ps.png",
+      "/images/icon/Icon_Tool_Ai.png",
+    ],
+    imageUrl: [
+      "/images/portfolio/Demon'sSouls/Demon's Souls_0.png",
+      "/images/portfolio/Demon'sSouls/Demon's Souls_1.png",
+    ],
+    type: "horizontal",
+    // detail page
+    source: "",
+    // keyword: ["가로형", "다크판타지", "RPG"],
+    // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
+    // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
+    detailImage: [
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_0.png",
+        text: "로고",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_1.png",
+        text: "메인화면",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_2.webp",
+        text: "인게임",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_1_1.webp",
+        text: "보스처치",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_2_2.webp",
+        text: "스테이지선택",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_3.png",
+        text: "결과창",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_4.png",
+        text: "장비창_1",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_5.png",
+        text: "장비창_2",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_6.png",
+        text: "강화연출",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_7.png",
+        text: "퀘스트",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_8.png",
+        text: "뽑기",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_9.webp",
+        text: "뽑기연출",
+        type: "horizontal",
+      },
+      {
+        url: "/images/portfolio/Demon'sSouls/Demon's Souls_10.gif",
+        text: "화면대응",
+        type: "horizontal",
+      },
+    ],
+  },
+
+
+ 
 ];
