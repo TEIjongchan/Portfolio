@@ -9,10 +9,8 @@ const SectionCover = forwardRef(({ onClick }, ref) => {
       <S.SectionImgWrapper>
         <S.TextWrapper>
           <S.Title>
-            <span>다양한,</span>
-            <span>동엽의,</span>
           </S.Title>
-          <S.SubTilte>Game UI Portfolio</S.SubTilte>
+          <S.SubTilte></S.SubTilte>
         </S.TextWrapper>
         <video autoPlay loop muted playsInline width="100%">
           <source
