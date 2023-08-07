@@ -1,130 +1,33 @@
 export const PROJECT_CONSTANT = [
+  // Chrono Odyssey
   {
-    name: "Spooky Friends",
-    genre: ["모바일", "ZEPETO", "수집형", "캐주얼"],
+    name: "Chrono Odyssey",
+    genre: ["콘솔", "MMORPG"],
     date: "2023.",
     listDescription: "",
     description:
-      "제페토 플랫폼에 사이드 프로젝트로 출시한 포켓몬 고 느낌의 간단한 수집형 캐주얼 게임입니다.<br/>게임 내 카메라로 사진을 찍어 유령을 포획하고, 포획한 유령을 장착해 클리커 전투를 즐기거나<br/>유령을 진화시키며 캐릭터들을 수집할 수 있습니다.",
+      "'크로노 오디세이'는 언리얼 기반으로 제작된 게임으로서<br/>PC 뿐만 아니라 콘솔도 지원하는 것을 목표로 하는 대규모 MMORPG 입니다.",
     iconUrl: [
-      "/images/icon/Icon_Tool_Unity.png",
+      "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
     ],
     imageUrl: [
-      "/images/project/SpookyFriends/Screenshot_Play.png",
-      "/images/project/SpookyFriends/Screenshot_Camera.png",
-      "/images/project/SpookyFriends/Movie_GhostInfo.gif",
-      "/images/project/SpookyFriends/Movie_Battle.gif",
+      "/images/project/Chrono/Gallery Louis_0.gif",
+      "/images/project/Chrono/Gallery Louis_1.gif",
     ],
-    type: "vertical",
+    type: "horizontal",
     source: "",
-
-    // 키워드~컬러 팔레트 없는 경우는 주석 처리
-    // keyword: ["키워드1", "키워드2", "키워드3"],
-    // keyShape: "/images/icon/unity.png",
-    // colorPalette: "/images/portfolio/projectS/colorPalette.png",
     detailImage: [
       {
         // 1st
-        url: "/images/project/SpookyFriends/Screenshot_Play.png",
+        url: "/images/project/GalleryLouis/Gallery Louis_0.gif",
         text: "플레이 화면",
         type: "vertical",
       },
       {
-        url: "/images/project/SpookyFriends/Movie_Toast.gif",
+        url: "/images/project/GalleryLouis/Gallery Louis_1.gif",
         text: "토스트 메세지",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Movie_Emoji.gif",
-        text: "감정표현",
-        type: "vertical",
-      },
-      {
-        // 2nd
-        url: "/images/project/SpookyFriends/Screenshot_Camera.png",
-        text: "카메라 화면",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Movie_Camera_GetGhost.gif",
-        text: "유령 포획 성공 화면",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_Camera_Result.png",
-        text: "찍은 사진",
-        type: "vertical",
-      },
-      {
-        // 3rd
-        url: "/images/project/SpookyFriends/Screenshot_Inventory.png",
-        text: "유령 가방",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Movie_GhostInfo.gif",
-        text: "유령 정보",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_Inventory_Release.png",
-        text: "유령 풀어주기",
-        type: "vertical",
-      },
-      {
-        // 4th
-        url: "/images/project/SpookyFriends/Movie_Evolve.gif",
-        text: "유령 진화",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_Evolve_Result.png",
-        text: "부적 사용 팝업",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_Evolve_Result_Fail.png",
-        text: "진화 실패",
-        type: "vertical",
-      },
-      {
-        // 5th
-        url: "/images/project/SpookyFriends/Movie_Loading.gif",
-        text: "로딩",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Movie_Battle.gif",
-        text: "전투",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_HowToPlay.png",
-        text: "게임 방법",
-        type: "vertical",
-      },
-      {
-        // 6th
-        url: "/images/project/SpookyFriends/Screenshot_Ranking.png",
-        text: "랭킹",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_Shop.png",
-        text: "상점",
-        type: "vertical",
-      },
-      {
-        url: "/images/project/SpookyFriends/Screenshot_Upgrade.png",
-        text: "업그레이드",
-        type: "vertical",
-      },
-      {
-        // 7th
-        url: "/images/project/SpookyFriends/Screenshot_Setting.png",
-        text: "설정",
         type: "vertical",
       },
     ],
@@ -136,28 +39,15 @@ export const PROJECT_CONSTANT = [
             title: "UI·UX",
             content: [
               { text: "GUI, 연출 및 엔진 작업", type: "text" },
-              { text: "화면 명세 기획", type: "text" },
-              { text: "UX 텍스트 및 번역 관리", type: "text" },
+              { text: "UX 플로우 정리", type: "text" },
+              { text: "콘솔 컨트롤러 키 대응", type: "text" },
             ],
           },
           {
-            title: "아트",
+            title: "언리얼 머티리얼 제작",
             content: [
-              { text: "캐릭터 모델링 및 애니메이팅", type: "text" },
-              { text: "이펙트 작업", type: "text" },
-            ],
-          },
-          {
-            title: "셰이더 작성",
-            content: [
-              { text: "유령 캐릭터 셰이더 작업", type: "text" },
-              { text: "필드 셰이더 작업", type: "text" },
-              // 들여쓰기 두번 텍스트 작성 예
-              // {
-              //   text: "TMP 셰이더 작업",
-              //   content: ["text", "text"],
-              //   type: "list",
-              // },
+              { text: "머티리얼 전반 제작", type: "text" },
+              { text: "머티리얼 관리 및 최적화", type: "text" },
             ],
           },
         ],
@@ -166,33 +56,676 @@ export const PROJECT_CONSTANT = [
         name: "프로젝트를 통해 얻은 경험",
         list: [
           {
-            title: "빠른 개발을 위한 작업 경량화",
+            title: "언리얼 프로젝트 숙련도 향상",
             content: [
               {
-                text: "UX부터 UI까지 산정된 작업 기간이 2달 내였는데, 퇴근 후에 진행하는 사이드프로젝트였기 때문에 실제 작업 시간은 더 빠듯했습니다.<br/>따라서 레이아웃은 수정사항이 발생하더라도 쉽게 대응할 수 있는 무난한 방향으로 설정하고, GUI는 패턴과 물결 모양을 여러 화면에서 반복해 사용하는 최대한 단순한 구성으로 작업했습니다. 그렇게 작업하면서 최대한 '빠르게' '가볍게' 작업하는 방법론을 체화할 수 있었던 것 같습니다.",
+                text: "유니티에서 언리얼로 넘어오는 과정에서 RPG라는 장르에 처음 진입하다 보니 숙련도가 많이 향상되었습니다. 프로젝트 진행 도중 발생했던 인력감축으로 인한 업무량의 증가를 충실히 수행하여 프로젝트의 진행도에 차질 없이 대응할 수 있었습니다.",
                 type: "text",
               },
             ],
           },
           {
-            title: "유니티 버텍스 셰이더 입문",
+            title: "콘솔 기반 UIUX 숙달",
             content: [
               {
-                text: "유령다운 알파 그라데이션과 캐릭터 바리에이션을 위해 유령 캐릭터의 셰이더를 작업하며 버텍스 셰이더에 입문했습니다.<br/>모델의 버텍스 포지션 값을 사용해서 그라데이션의 범위를 자유롭게 조정 가능하도록 작성했습니다. 서페이스 셰이더에서 버텍스 셰이더를 어떻게 사용해야 하는지와 구조체를 어떻게 수정해야 하는지 배울 수 있었습니다.",
-                type: "text",
-              },
-              {
-                text: "관련 블로그 포스팅<br/>https://do-workspace.tistory.com/36",
+                text: "RPG 장르를 콘솔로 즐길 수 있도록 만들어야 했기에 다른 플랫폼과는 차별화된 UI에 대한 지식을 습득하였습니다.",
                 type: "text",
               },
             ],
           },
           {
-            title: `프로젝트 회고<br/><a href="https://do-workspace.tistory.com/43" target="_blank">https://do-workspace.tistory.com/43</a>`,
-            content: [],
+            title: "자체적인 머티리얼 학습",
+            content: [
+              {
+                text: "원하는 연출을 제작하기 위해서 개인적인 시간을 활용해 머티리얼의 기본적인 지식을 얻고 회사에서 제공하는 기존 머티리얼 구조를 학습해 더 완성도 있는 머티리얼을 제작할 수 있게 되었습니다.",
+                type: "text",
+              },
+            ],
           },
         ],
       },
     ],
   },
+
+  // Gallery Louis
+  {
+    name: "Gallery Louis",
+    genre: ["모바일", "수집형", "캐주얼"],
+    date: "2023.",
+    listDescription: "",
+    description:
+      "'갤러리 루이스'는 등급을 올려서 다양한 사람과 경쟁하고<br/>참신한 아이템들을 수집할 수 있는 드랍 매치 퍼즐게임입니다.",
+    iconUrl: [
+      "/images/icon/Icon_Tool_Unity.png",
+      "/images/icon/Icon_Tool_Ps.png",
+      "/images/icon/Icon_Tool_Ai.png",
+    ],
+    imageUrl: [
+      "/images/project/GalleryLouis/Gallery Louis_0.gif",
+      "/images/project/GalleryLouis/Gallery Louis_1.gif",
+      "/images/project/GalleryLouis/Gallery Louis_2.gif",
+      "/images/project/GalleryLouis/Gallery Louis_3.gif",
+    ],
+    type: "vertical",
+    source: "",
+    detailImage: [
+      {
+        // 1st
+        url: "/images/project/GalleryLouis/Gallery Louis_0.gif",
+        text: "플레이 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_1.gif",
+        text: "토스트 메세지",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_2.gif",
+        text: "감정표현",
+        type: "vertical",
+      },
+      {
+        // 2nd
+        url: "/images/project/GalleryLouis/Gallery Louis_3.gif",
+        text: "카메라 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_4.png",
+        text: "유령 포획 성공 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_5.png",
+        text: "찍은 사진",
+        type: "vertical",
+      },
+      {
+        // 3rd
+        url: "/images/project/GalleryLouis/Gallery Louis_6.gif",
+        text: "유령 가방",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_7.gif",
+        text: "유령 정보",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_8.gif",
+        text: "유령 풀어주기",
+        type: "vertical",
+      },
+      {
+        // 4th
+        url: "/images/project/GalleryLouis/Gallery Louis_9.png",
+        text: "유령 진화",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_10.gif",
+        text: "부적 사용 팝업",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_11.gif",
+        text: "진화 실패",
+        type: "vertical",
+      },
+      {
+        // 5th
+        url: "/images/project/GalleryLouis/Gallery Louis_12.gif",
+        text: "로딩",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_13.png",
+        text: "전투",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_14.gif",
+        text: "게임 방법",
+        type: "vertical",
+      },
+      {
+        // 6th
+        url: "/images/project/GalleryLouis/Gallery Louis_15.gif",
+        text: "랭킹",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_16.gif",
+        text: "상점",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_17.png",
+        text: "업그레이드",
+        type: "vertical",
+      },
+      {
+        // 7th
+        url: "/images/project/GalleryLouis/Gallery Louis_18.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_19.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_20.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        // 8th
+        url: "/images/project/GalleryLouis/Gallery Louis_21.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/GalleryLouis/Gallery Louis_22.png",
+        text: "설정",
+        type: "vertical",
+      },
+    ],
+    history: [
+      {
+        name: "프로젝트에서 작업한 내용",
+        list: [
+          {
+            title: "아트 총괄",
+            content: [
+              { text: "아트리소스 전반 제작", type: "text" },
+              { text: "마케팅 이미지 및 게임 소개 영상 제작", type: "text" },
+            ],
+          },
+        ],
+      },
+      {
+        name: "프로젝트를 통해 얻은 경험",
+        list: [
+          {
+            title: "연출 기술 숙련",
+            content: [
+              {
+                text: "유니티의 파티클시스템이 가진 다양한 기능과 설정을 숙지하고, 다양한 빛 연출을 자유롭게 구현하는 데 능숙하게 되었으며 창의적인 아이디어를 활용하여 독창적인 시각적 효과를 구현할 수 있게 되었습니다.",
+                type: "text",
+              },
+            ],
+          },
+          {
+            title: "연출과 심리학의 결합",
+            content: [
+              {
+                text: "화려하고 자극적인 연출을 통해 사람들의 원초적 감정을 자극하여 흥미를 더욱 끌게하면서 게임의 몰입도 향상에 기여할 수 있었습니다.",
+                type: "text",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  // Arena Go
+  {
+    name: "Arena Go",
+    genre: ["모바일", "수집형", "캐주얼"],
+    date: "2023.",
+    listDescription: "",
+    description:
+      "'아레나 고'는 1:1 시뮬레이션 게임으로<br/>귀엽고 특색있는 캐릭터와 다양한 무기를 조합하여 나만의 조합으로 상대방과의 전투를 즐기는 게임입니다.",
+    iconUrl: [
+      "/images/icon/Icon_Tool_Unity.png",
+      "/images/icon/Icon_Tool_Ps.png",
+      "/images/icon/Icon_Tool_Ai.png",
+    ],
+    imageUrl: [
+      "/images/project/ArenaGo/Arena Go.png",
+      "/images/project/ArenaGo/ArenaGo_Movie.webp",
+      "/images/project/ArenaGo/Arena Go_1.png",
+      "/images/project/ArenaGo/Arena Go_2.gif",
+    ],
+    type: "horizontal",
+    source: "",
+    detailImage: [
+      {
+        // 1st
+        url: "/images/project/ArenaGo/Arena Go.png",
+        text: "플레이 화면",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/ArenaGo_Movie.webp",
+        text: "토스트 메세지",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_1.png",
+        text: "감정표현",
+        type: "horizontal",
+      },
+      {
+        // 2nd
+        url: "/images/project/ArenaGo/Arena Go_2.gif",
+        text: "카메라 화면",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_3.png",
+        text: "유령 포획 성공 화면",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_4.gif",
+        text: "찍은 사진",
+        type: "horizontal",
+      },
+      {
+        // 3rd
+        url: "/images/project/ArenaGo/Arena Go_5.gif",
+        text: "유령 가방",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_6.gif",
+        text: "유령 정보",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_7.gif",
+        text: "유령 풀어주기",
+        type: "horizontal",
+      },
+      {
+        // 4th
+        url: "/images/project/ArenaGo/Arena Go_8.gif",
+        text: "유령 진화",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_9.png",
+        text: "부적 사용 팝업",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_10.png",
+        text: "진화 실패",
+        type: "horizontal",
+      },
+      {
+        // 5th
+        url: "/images/project/ArenaGo/Arena Go_11.gif",
+        text: "로딩",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_12.png",
+        text: "전투",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_13.png",
+        text: "게임 방법",
+        type: "horizontal",
+      },
+      {
+        // 6th
+        url: "/images/project/ArenaGo/Arena Go_14.png",
+        text: "랭킹",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_15.png",
+        text: "상점",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_16.png",
+        text: "업그레이드",
+        type: "horizontal",
+      },
+      {
+        // 7th
+        url: "/images/project/ArenaGo/Arena Go_17.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_18.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_19.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        // 8th
+        url: "/images/project/ArenaGo/Arena Go_20.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_21.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_22.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        // 9th
+        url: "/images/project/ArenaGo/Arena Go_23.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_24.png",
+        text: "설정",
+        type: "horizontal",
+      },
+      {
+        url: "/images/project/ArenaGo/Arena Go_25.png",
+        text: "설정",
+        type: "horizontal",
+      },
+    ],
+    history: [
+      {
+        name: "프로젝트에서 작업한 내용",
+        list: [
+          {
+            title: "아트 총괄",
+            content: [
+              { text: "UIUX 전반 제작", type: "text" },
+              { text: "인게임 배경 전반 제작", type: "text" },
+              { text: "캐릭터 스킨 다수 제작", type: "text" },
+              { text: "모든 이펙트 제작", type: "text" },
+              { text: "마케팅 이미지 및 게임 소개 영상 제작", type: "text" },
+            ],
+          },
+        ],
+      },
+      {
+        name: "프로젝트를 통해 얻은 경험",
+        list: [
+          {
+            title: "디자인 컨셉에 맞는 아트 리소스 제작",
+            content: [
+              {
+                text: "창의적인 캐릭터 컨셉을 바탕으로 독특하고 특색있는 아트리소스를 제작함으로서 더 다양하고 더 넓은 안목을 가지게 되었습니다.<br/>다른 아티스트들과의 교류를 통해서 새로운 시각적 아이디어를 얻고, 자신의 작업을 보완해 차별화된 아트 리소스를 제작할 수 있게 되었습니다.",
+                type: "text",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
+  // Random Dice
+  {
+    name: "Random Dice",
+    genre: ["모바일", "수집형", "캐주얼"],
+    date: "2023.",
+    listDescription: "",
+    description:
+      "'랜덤다이스'는 1:1 전략 디펜스를 모바일에 적합한 형태로 이식하여 사람들의 경쟁심리를 일깨우고 도전욕구를 자극하는 게임입니다.",
+    iconUrl: [
+      "/images/icon/Icon_Tool_Unity.png",
+      "/images/icon/Icon_Tool_Ps.png",
+      "/images/icon/Icon_Tool_Ai.png",
+    ],
+    imageUrl: [
+      "/images/project/RandomDice/Random Dice_0.png",
+      "/images/project/RandomDice/Random Dice.webp",
+      "/images/project/RandomDice/Random Dice_1.png",
+      "/images/project/RandomDice/Random Dice_2.png",
+    ],
+    type: "vertical",
+    source: "",
+    detailImage: [
+      {
+        // 1st
+        url: "/images/project/RandomDice/Random Dice_0.png",
+        text: "플레이 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice//Random Dice.webp",
+        text: "토스트 메세지",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_1.png",
+        text: "감정표현",
+        type: "vertical",
+      },
+      {
+        // 2nd
+        url: "/images/project/RandomDice/Random Dice_2.png",
+        text: "카메라 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_3.png",
+        text: "유령 포획 성공 화면",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_4.png",
+        text: "찍은 사진",
+        type: "vertical",
+      },
+      {
+        // 3rd
+        url: "/images/project/RandomDice/Random Dice_5.png",
+        text: "유령 가방",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_6.png",
+        text: "유령 정보",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_7.png",
+        text: "유령 풀어주기",
+        type: "vertical",
+      },
+      {
+        // 4th
+        url: "/images/project/RandomDice/Random Dice_8.png",
+        text: "유령 진화",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_9.png",
+        text: "부적 사용 팝업",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_10.png",
+        text: "진화 실패",
+        type: "vertical",
+      },
+      {
+        // 5th
+        url: "/images/project/RandomDice/Random Dice_11.png",
+        text: "로딩",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_12.gif",
+        text: "전투",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_13.gif",
+        text: "게임 방법",
+        type: "vertical",
+      },
+      {
+        // 6th
+        url: "/images/project/RandomDice/Random Dice_14.png",
+        text: "랭킹",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_15.png",
+        text: "상점",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_16.png",
+        text: "업그레이드",
+        type: "vertical",
+      },
+      {
+        // 7th
+        url: "/images/project/RandomDice/Random Dice_17.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_18.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_19.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        // 8th
+        url: "/images/project/RandomDice/Random Dice_20.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_21.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_22.png",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        // 9th
+        url: "/images/project/RandomDice/Random Dice_23.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_24.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_25.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        // 10th
+        url: "/images/project/RandomDice/Random Dice_26.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_27.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_28.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        // 9th
+        url: "/images/project/RandomDice/Random Dice_29.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_30.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        url: "/images/project/RandomDice/Random Dice_31.gif",
+        text: "설정",
+        type: "vertical",
+      },
+      {
+        // 10th
+        url: "/images/project/RandomDice/Random Dice_32.gif",
+        text: "설정",
+        type: "vertical",
+      },
+    ],
+    history: [
+      {
+        name: "프로젝트에서 작업한 내용",
+        list: [
+          {
+            title: "아트 총괄",
+            content: [
+              { text: "모든 GUI 제작", type: "text" },
+              { text: "모든 오브젝트 제작", type: "text" },
+              { text: "모든 연출 제작", type: "text" },
+              { text: "모든 이펙트 제작", type: "text" },
+              { text: "마케팅 이미지 및 게임 소개 영상 제작", type: "text" },
+            ],
+          },
+        ],
+      },
+      {
+        name: "프로젝트를 통해 얻은 경험",
+        list: [
+          {
+            title: "게임 내 아트리소스 제작에 관한 전범위적인 이해",
+            content: [
+              {
+                text: "소수 프로젝트 인원으로 시작하여 개개인의 역할이 중요한 프로젝트였기에 아트 리소스에 대한 전반적인 능력이 필요했고, 게임 내 아트 리소스들의 조화를 맞추는 능력이 향상 되었습니다.",
+                type: "text",
+              },
+            ],
+          },
+          {
+            title: "디자인 리소스 제작 일정 관리",
+            content: [
+              {
+                text: "개발자와 협업간에 충분한 커뮤니케이션을 통해 서로의 업무 일정에 맞는 스케쥴 관리에 능숙해졌고, 타 직군의 일정에 대한 이해도가 향상 되었습니다.",
+                type: "text",
+              },
+            ],
+          },
+          {
+            title: "유저 피드백에 대한 즉각적인 대응",
+            content: [
+              {
+                text: "게임 출시 후 다양한 소통 창구에서 유저의 의견을 취합 후 추후 업데이트에 해당 피드백 내용을 반영하여 더 나은 게임으로 발전시킬 수 있었습니다.",
+                type: "text",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  
 ];
