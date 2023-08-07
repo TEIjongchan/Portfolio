@@ -421,7 +421,7 @@ export const PORTFOLIO_CONSTANT = [
     imageUrl: [
       "/images/portfolio/CrystalBreak/Crystal Break.webp",
       "/images/portfolio/CrystalBreak/Crystal Brea_0.png",
-      "/images/portfolio/CrystalBreak/Crystal Brea_1.png",
+      "/images/portfolio/CrystalBreak/Crystal Brea_1.gif",
       "/images/portfolio/CrystalBreak/Crystal Brea_3.png",
     ],
     type: "vertical",
@@ -567,27 +567,27 @@ export const PORTFOLIO_CONSTANT = [
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/CrystalBreak/RainBow Six_1.png",
+        url: "/images/portfolio/RainBowSix/RainBow Six_1.png",
         text: "메인화면",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/CrystalBreak/RainBow Six_2.png",
+        url: "/images/portfolio/RainBowSix/RainBow Six_2.png",
         text: "캐릭터선택",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/CrystalBreak/RainBow Six_3.png",
+        url: "/images/portfolio/RainBowSix/RainBow Six_3.png",
         text: "인게임",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/CrystalBreak/RainBow Six_4.png",
+        url: "/images/portfolio/RainBowSix/RainBow Six_4.png",
         text: "결과화면",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/CrystalBreak/RainBow Six_5.png",
+        url: "/images/portfolio/RainBowSix/RainBow Six_5.png",
         text: "컨트롤러 설정",
         type: "horizontal",
       },
@@ -617,42 +617,42 @@ export const PORTFOLIO_CONSTANT = [
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
     detailImage: [
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_0.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_0.png",
         text: "인게임_1",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_1.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_1.png",
         text: "인게임_2",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_2.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_2.png",
         text: "UI설명_1",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_3.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_3.png",
         text: "UI설명_2",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_4.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_4.png",
         text: "인벤토리",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_4_1.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_4_1.png",
         text: "",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_5.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_5.png",
         text: "아이콘_1",
         type: "horizontal",
       },
       {
-        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_5.png.png",
+        url: "/images/portfolio/RPGPortfolio/RPG Portfolio_5.png",
         text: "아이콘_2",
         type: "horizontal",
       },

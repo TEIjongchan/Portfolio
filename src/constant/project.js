@@ -13,22 +13,22 @@ export const PROJECT_CONSTANT = [
       "/images/icon/Icon_Tool_Ai.png",
     ],
     imageUrl: [
-      "/images/project/Chrono/Gallery Louis_0.gif",
-      "/images/project/Chrono/Gallery Louis_1.gif",
+      "/images/project/Chrono/Chrono_0.png",
+      "/images/project/Chrono/Chrono_1.png",
     ],
     type: "horizontal",
     source: "",
     detailImage: [
       {
         // 1st
-        url: "/images/project/GalleryLouis/Gallery Louis_0.gif",
+        url: "/images/project/Chrono/Chrono_0.png",
         text: "플레이 화면",
-        type: "vertical",
+        type: "horizontal",
       },
       {
-        url: "/images/project/GalleryLouis/Gallery Louis_1.gif",
+        url: "/images/project/Chrono/Chrono_1.png",
         text: "토스트 메세지",
-        type: "vertical",
+        type: "horizontal",
       },
     ],
     history: [
@@ -288,8 +288,6 @@ export const PROJECT_CONSTANT = [
     imageUrl: [
       "/images/project/ArenaGo/Arena Go.png",
       "/images/project/ArenaGo/ArenaGo_Movie.webp",
-      "/images/project/ArenaGo/Arena Go_1.png",
-      "/images/project/ArenaGo/Arena Go_2.gif",
     ],
     type: "horizontal",
     source: "",
@@ -727,5 +725,4 @@ export const PROJECT_CONSTANT = [
       },
     ],
   },
-  
 ];

@@ -46,7 +46,7 @@ const S = {
   `,
   HistoryContent: styled.div`
     text-align: center;
-    width: 400px;
+    width: 8000px;
     color: #1e1e1e;
 
     .title {
