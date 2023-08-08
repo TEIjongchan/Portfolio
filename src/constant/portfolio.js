@@ -39,7 +39,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/King/King_3.png",
-        text: "캐릭터 정보",
+        text: "퀘스트",
         type: "horizontal",
       },
       {
