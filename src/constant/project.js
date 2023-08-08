@@ -22,12 +22,12 @@ export const PROJECT_CONSTANT = [
       {
         // 1st
         url: "/images/project/Chrono/Chrono_0.png",
-        text: "플레이 화면",
+        text: "",
         type: "horizontal",
       },
       {
         url: "/images/project/Chrono/Chrono_1.png",
-        text: "토스트 메세지",
+        text: "",
         type: "horizontal",
       },
     ],
@@ -90,8 +90,8 @@ export const PROJECT_CONSTANT = [
   // Gallery Louis
   {
     name: "Gallery Louis",
-    genre: ["모바일", "수집형", "캐주얼"],
-    date: "2023.",
+    genre: ["모바일", "드롭매치", "퍼즐"],
+    date: "2021.03-2021.11",
     listDescription: "",
     description:
       "'갤러리 루이스'는 등급을 올려서 다양한 사람과 경쟁하고<br/>참신한 아이템들을 수집할 수 있는 드랍 매치 퍼즐게임입니다.",
@@ -107,129 +107,129 @@ export const PROJECT_CONSTANT = [
       "/images/project/GalleryLouis/Gallery Louis_3.gif",
     ],
     type: "vertical",
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
       {
         // 1st
         url: "/images/project/GalleryLouis/Gallery Louis_0.gif",
-        text: "플레이 화면",
+        text: "로고",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_1.gif",
-        text: "토스트 메세지",
+        text: "인게임 1",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_2.gif",
-        text: "감정표현",
+        text: "인게임 2",
         type: "vertical",
       },
       {
         // 2nd
         url: "/images/project/GalleryLouis/Gallery Louis_3.gif",
-        text: "카메라 화면",
+        text: "인게임 3",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_4.png",
-        text: "유령 포획 성공 화면",
+        text: "상점",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_5.png",
-        text: "찍은 사진",
+        text: "아이템 구매 팝업",
         type: "vertical",
       },
       {
         // 3rd
         url: "/images/project/GalleryLouis/Gallery Louis_6.gif",
-        text: "유령 가방",
+        text: "보상 획득",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_7.gif",
-        text: "유령 정보",
+        text: "등급업 연출",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_8.gif",
-        text: "유령 풀어주기",
+        text: "공지 알림 연출",
         type: "vertical",
       },
       {
         // 4th
         url: "/images/project/GalleryLouis/Gallery Louis_9.png",
-        text: "유령 진화",
+        text: "게임 모드",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_10.gif",
-        text: "부적 사용 팝업",
+        text: "핀볼 게임 1",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_11.gif",
-        text: "진화 실패",
+        text: "핀볼 게임 2",
         type: "vertical",
       },
       {
         // 5th
         url: "/images/project/GalleryLouis/Gallery Louis_12.gif",
-        text: "로딩",
+        text: "핀볼 게임 3",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_13.png",
-        text: "전투",
+        text: "캐릭터 수집",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_14.gif",
-        text: "게임 방법",
+        text: "상점",
         type: "vertical",
       },
       {
         // 6th
         url: "/images/project/GalleryLouis/Gallery Louis_15.gif",
-        text: "랭킹",
+        text: "뽑기 1",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_16.gif",
-        text: "상점",
+        text: "뽑기 2",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_17.png",
-        text: "업그레이드",
+        text: "메뉴 탭",
         type: "vertical",
       },
       {
         // 7th
         url: "/images/project/GalleryLouis/Gallery Louis_18.png",
-        text: "설정",
+        text: "등급 정보",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_19.png",
-        text: "설정",
+        text: "컬렉션",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_20.png",
-        text: "설정",
+        text: "이름 설정",
         type: "vertical",
       },
       {
         // 8th
         url: "/images/project/GalleryLouis/Gallery Louis_21.png",
-        text: "설정",
+        text: "이벤트 1",
         type: "vertical",
       },
       {
         url: "/images/project/GalleryLouis/Gallery Louis_22.png",
-        text: "설정",
+        text: "이벤트 2",
         type: "vertical",
       },
     ],
@@ -275,8 +275,8 @@ export const PROJECT_CONSTANT = [
   // Arena Go
   {
     name: "Arena Go",
-    genre: ["모바일", "수집형", "캐주얼"],
-    date: "2023.",
+    genre: ["모바일", "캐주얼", "시뮬레이션"],
+    date: "2020.08-2021.03",
     listDescription: "",
     description:
       "'아레나 고'는 1:1 시뮬레이션 게임으로<br/>귀엽고 특색있는 캐릭터와 다양한 무기를 조합하여 나만의 조합으로 상대방과의 전투를 즐기는 게임입니다.",
@@ -290,113 +290,113 @@ export const PROJECT_CONSTANT = [
       "/images/project/ArenaGo/ArenaGo_Movie.webp",
     ],
     type: "horizontal",
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
       {
         // 1st
         url: "/images/project/ArenaGo/Arena Go.png",
-        text: "플레이 화면",
+        text: "로딩 화면",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/ArenaGo_Movie.webp",
-        text: "토스트 메세지",
+        text: "게임 영상",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_1.png",
-        text: "감정표현",
+        text: "메인 화면",
         type: "horizontal",
       },
       {
         // 2nd
         url: "/images/project/ArenaGo/Arena Go_2.gif",
-        text: "카메라 화면",
+        text: "인게임 1",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_3.png",
-        text: "유령 포획 성공 화면",
+        text: "인게임 2",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_4.gif",
-        text: "찍은 사진",
+        text: "인게임 3",
         type: "horizontal",
       },
       {
         // 3rd
         url: "/images/project/ArenaGo/Arena Go_5.gif",
-        text: "유령 가방",
+        text: "승리 연출",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_6.gif",
-        text: "유령 정보",
+        text: "패배 연출",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_7.gif",
-        text: "유령 풀어주기",
+        text: "복수 모드",
         type: "horizontal",
       },
       {
         // 4th
         url: "/images/project/ArenaGo/Arena Go_8.gif",
-        text: "유령 진화",
+        text: "복수 성공",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_9.png",
-        text: "부적 사용 팝업",
+        text: "아이템 정보",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_10.png",
-        text: "진화 실패",
+        text: "캐릭터 정보",
         type: "horizontal",
       },
       {
         // 5th
         url: "/images/project/ArenaGo/Arena Go_11.gif",
-        text: "로딩",
+        text: "업그레이드",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_12.png",
-        text: "전투",
+        text: "등급 패스",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_13.png",
-        text: "게임 방법",
+        text: "게임 모드 선택",
         type: "horizontal",
       },
       {
         // 6th
         url: "/images/project/ArenaGo/Arena Go_14.png",
-        text: "랭킹",
+        text: "어드벤처 모드 1",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_15.png",
-        text: "상점",
+        text: "어드벤처 모드 2",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_16.png",
-        text: "업그레이드",
+        text: "어드벤처 모드 3",
         type: "horizontal",
       },
       {
         // 7th
         url: "/images/project/ArenaGo/Arena Go_17.png",
-        text: "설정",
+        text: "출석부",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_18.png",
-        text: "설정",
+        text: "퀘스트",
         type: "horizontal",
       },
       {
@@ -407,33 +407,33 @@ export const PROJECT_CONSTANT = [
       {
         // 8th
         url: "/images/project/ArenaGo/Arena Go_20.png",
-        text: "설정",
+        text: "상점",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_21.png",
-        text: "설정",
+        text: "배경 1",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_22.png",
-        text: "설정",
+        text: "배경 2",
         type: "horizontal",
       },
       {
         // 9th
         url: "/images/project/ArenaGo/Arena Go_23.png",
-        text: "설정",
+        text: "배경 3",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_24.png",
-        text: "설정",
+        text: "배경 4",
         type: "horizontal",
       },
       {
         url: "/images/project/ArenaGo/Arena Go_25.png",
-        text: "설정",
+        text: "배경 5",
         type: "horizontal",
       },
     ],
@@ -473,8 +473,8 @@ export const PROJECT_CONSTANT = [
   // Random Dice
   {
     name: "Random Dice",
-    genre: ["모바일", "수집형", "캐주얼"],
-    date: "2023.",
+    genre: ["모바일", "캐주얼", "1:1 디펜스"],
+    date: "2019.01-2020.08",
     listDescription: "",
     description:
       "'랜덤다이스'는 1:1 전략 디펜스를 모바일에 적합한 형태로 이식하여 사람들의 경쟁심리를 일깨우고 도전욕구를 자극하는 게임입니다.",
@@ -490,188 +490,188 @@ export const PROJECT_CONSTANT = [
       "/images/project/RandomDice/Random Dice_2.png",
     ],
     type: "vertical",
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
       {
         // 1st
         url: "/images/project/RandomDice/Random Dice_0.png",
-        text: "플레이 화면",
+        text: "로딩 화면",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice//Random Dice.webp",
-        text: "토스트 메세지",
+        text: "튜토리얼 영상",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_1.png",
-        text: "감정표현",
+        text: "메인 화면",
         type: "vertical",
       },
       {
         // 2nd
         url: "/images/project/RandomDice/Random Dice_2.png",
-        text: "카메라 화면",
+        text: "매칭 화면",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_3.png",
-        text: "유령 포획 성공 화면",
+        text: "주사위 세팅 1",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_4.png",
-        text: "찍은 사진",
+        text: "주사위 세팅 2",
         type: "vertical",
       },
       {
         // 3rd
         url: "/images/project/RandomDice/Random Dice_5.png",
-        text: "유령 가방",
+        text: "주사위 정보",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_6.png",
-        text: "유령 정보",
+        text: "주사위 업그레이드",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_7.png",
-        text: "유령 풀어주기",
+        text: "퀘스트",
         type: "vertical",
       },
       {
         // 4th
         url: "/images/project/RandomDice/Random Dice_8.png",
-        text: "유령 진화",
+        text: "메뉴 탭",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_9.png",
-        text: "부적 사용 팝업",
+        text: "상점",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_10.png",
-        text: "진화 실패",
+        text: "랜덤다이스 크루",
         type: "vertical",
       },
       {
         // 5th
         url: "/images/project/RandomDice/Random Dice_11.png",
-        text: "로딩",
+        text: "리디자인 - 메인화면",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_12.gif",
-        text: "전투",
+        text: "리디자인 - 인게임",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_13.gif",
-        text: "게임 방법",
+        text: "리디자인 - 인게임 승리",
         type: "vertical",
       },
       {
         // 6th
         url: "/images/project/RandomDice/Random Dice_14.png",
-        text: "랭킹",
+        text: "리디자인 - 주사위 세팅 1",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_15.png",
-        text: "상점",
+        text: "리디자인 - 주사위 세팅 2",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_16.png",
-        text: "업그레이드",
+        text: "리디자인 - 주사위 세팅 3",
         type: "vertical",
       },
       {
         // 7th
         url: "/images/project/RandomDice/Random Dice_17.gif",
-        text: "설정",
+        text: "리디자인 - 뽑기 연출",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_18.png",
-        text: "설정",
+        text: "리디자인 - 이모티콘",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_19.png",
-        text: "설정",
+        text: "리디자인 - 메뉴 탭",
         type: "vertical",
       },
       {
         // 8th
         url: "/images/project/RandomDice/Random Dice_20.png",
-        text: "설정",
+        text: "리디자인 - 랜덤다이스 크루 1",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_21.png",
-        text: "설정",
+        text: "리디자인 - 랜덤다이스 크루 2",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_22.png",
-        text: "설정",
+        text: "리디자인 - 랜덤다이스 크루 3",
         type: "vertical",
       },
       {
         // 9th
         url: "/images/project/RandomDice/Random Dice_23.gif",
-        text: "설정",
+        text: "이모티콘 1",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_24.gif",
-        text: "설정",
+        text: "이모티콘 2",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_25.gif",
-        text: "설정",
+        text: "이모티콘 3",
         type: "vertical",
       },
       {
         // 10th
         url: "/images/project/RandomDice/Random Dice_26.gif",
-        text: "설정",
+        text: "이모티콘 4",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_27.gif",
-        text: "설정",
+        text: "이모티콘 5",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_28.gif",
-        text: "설정",
+        text: "이모티콘 6",
         type: "vertical",
       },
       {
         // 9th
         url: "/images/project/RandomDice/Random Dice_29.gif",
-        text: "설정",
+        text: "이모티콘 7",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_30.gif",
-        text: "설정",
+        text: "이모티콘 8",
         type: "vertical",
       },
       {
         url: "/images/project/RandomDice/Random Dice_31.gif",
-        text: "설정",
+        text: "이모티콘 9",
         type: "vertical",
       },
       {
         // 10th
         url: "/images/project/RandomDice/Random Dice_32.gif",
-        text: "설정",
+        text: "이모티콘 10",
         type: "vertical",
       },
     ],
