@@ -17,7 +17,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -98,7 +98,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -174,7 +174,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -265,7 +265,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -323,7 +323,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "vertical",
     // detail page
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -426,7 +426,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "vertical",
     // detail page
-    source: "",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
