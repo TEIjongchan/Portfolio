@@ -107,7 +107,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/GalleryLouis/Gallery Louis_3.gif",
     ],
     type: "vertical",
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
       {
         // 1st
@@ -290,7 +290,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/ArenaGo/ArenaGo_Movie.webp",
     ],
     type: "horizontal",
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
       {
         // 1st
@@ -490,7 +490,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/RandomDice/Random Dice_2.png",
     ],
     type: "vertical",
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요.<br/>영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
       {
         // 1st
