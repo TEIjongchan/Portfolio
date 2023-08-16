@@ -19,7 +19,7 @@ export const HISTORY_CONSTANT = {
     {
       name: "(주) 111퍼센트",
       job: "디자이너로 근무",
-      date: "2016.01 - 2021.11",
+      date: "2016.11 - 2021.11",
       workDetail: ["신규게임 개발"],
     },
     {
