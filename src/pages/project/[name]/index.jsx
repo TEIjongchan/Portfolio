@@ -42,7 +42,7 @@ function ProjectDetail() {
                       dangerouslySetInnerHTML={{ __html: project.description }}
                     />
                     {project.source.length > 0 && (
-                      <S.SmallText>{project.source}</S.SmallText>
+                      <S.SmallText dangerouslySetInnerHTML={{ __html: project.source }}/>
                     )}
                   </S.GameDesc>
                 </S.InfoWrapper>
@@ -319,7 +319,7 @@ const S = {
     gap: 96px;
 
     a {
-      color: #0000ff;
+      color: #1779EC;
     }
   `,
   HistoryWrapper: styled.div`

@@ -41,7 +41,7 @@ function PortfolioDetail() {
                     dangerouslySetInnerHTML={{ __html: portfolio.description }}
                   />
                   {portfolio.source.length > 0 && (
-                    <S.SmallText>{portfolio.source}</S.SmallText>
+                    <S.SmallText dangerouslySetInnerHTML={{ __html: portfolio.source }}/>
                   )}
                 </S.GameDesc>
               </S.InfoWrapper>
