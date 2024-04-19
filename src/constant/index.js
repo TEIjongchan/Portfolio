@@ -8,12 +8,6 @@ export const HISTORY_CONSTANT = {
       major: "게임 그래픽 전공",
       date: "2014 - 2016.",
     },
-    {
-      name: "경희대학교",
-      major: "디지털콘텐츠학과",
-      date: "2017 - 2018. (휴학)",
-      score: "학점 3.97 / 4.3",
-    },
   ],
   career: [
     {
@@ -25,9 +19,17 @@ export const HISTORY_CONSTANT = {
     {
       name: "(주) 엔픽셀",
       job: "UI/UX 디자이너",
-      date: "2021.11 - (현재).",
+      date: "2022.11 - 2023.08.",
       workDetail: [
         "크로노오디세이 UIUX 작업 "
+      ],
+    },
+    {
+      name: "(주) NCSOFT",
+      job: "UI/UX 디자이너",
+      date: "2023.10 - (현재).",
+      workDetail: [
+        "아이온2 UIUX 작업 "
       ],
     },
   ],
