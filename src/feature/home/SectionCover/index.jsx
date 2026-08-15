@@ -17,21 +17,68 @@ function TubesCanvas({ tubesRef }) {
 
     const initTubes = async () => {
       try {
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+        if (prefersReducedMotion) return;
+
+        const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+        const hardwareConcurrency = navigator.hardwareConcurrency || 4;
+        const deviceMemory = navigator.deviceMemory || 4;
+        const isLowPower = hardwareConcurrency <= 4 || deviceMemory <= 4;
+        const isCompact = isCoarsePointer || window.innerWidth <= 768;
+        const targetFps = isLowPower || isCompact ? 30 : 40;
+
         const tubesModule = await import(
           /* webpackIgnore: true */
           "https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js"
         );
         if (!mounted || !canvasRef.current) return;
 
-        tubesRef.current = tubesModule.default(canvasRef.current, {
+        const tubes = tubesModule.default(canvasRef.current, {
+          bloom: isLowPower
+            ? false
+            : { threshold: 0.05, strength: 1.1, radius: 0.35 },
           tubes: {
+            count: isCompact ? 7 : 10,
             colors: ["#f967fb", "#53bc28", "#6958d5"],
+            minTubularSegments: 24,
+            maxTubularSegments: isCompact ? 48 : 72,
             lights: {
               intensity: 200,
               colors: ["#83f36e", "#fe8a2e", "#ff008a", "#60aed5"],
             },
           },
         });
+
+        // The library forces a 2x pixel ratio by default. On high-DPI Windows
+        // displays that can render more than four times as many pixels as needed.
+        const pixelRatio = isCompact || isLowPower ? 1 : 1.25;
+        tubes.three.minPixelRatio = pixelRatio;
+        tubes.three.maxPixelRatio = pixelRatio;
+        tubes.three.resize();
+
+        // Cap the WebGL loop while keeping cursor movement visually smooth.
+        const originalBeforeRender = tubes.three.onBeforeRender;
+        const originalRender = tubes.three.render.bind(tubes.three);
+        const frameInterval = 1000 / targetFps;
+        let lastFrame = 0;
+        let shouldRender = false;
+
+        tubes.three.onBeforeRender = (time) => {
+          const now = performance.now();
+          if (now - lastFrame < frameInterval) return;
+          lastFrame = now;
+          shouldRender = true;
+          originalBeforeRender(time);
+        };
+        tubes.three.render = () => {
+          if (!shouldRender) return;
+          shouldRender = false;
+          originalRender();
+        };
+
+        tubesRef.current = tubes;
       } catch (error) {
         console.error("Failed to load TubesCursor:", error);
       }
@@ -41,7 +88,7 @@ function TubesCanvas({ tubesRef }) {
 
     return () => {
       mounted = false;
-      tubesRef.current?.destroy?.();
+      tubesRef.current?.dispose?.();
       tubesRef.current = null;
     };
   }, [tubesRef]);

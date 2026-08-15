@@ -58,7 +58,28 @@ function MyApp({ Component, pageProps }) {
           content="게임 UI/UX 디자이너 이종찬의 프로젝트와 개인 포트폴리오입니다."
         />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:url" content="https://jc-portfolio-ten.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://jc-portfolio-ten.vercel.app/images/og-portfolio.png?v=20260815-2"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="849" />
+        <meta property="og:image:height" content="329" />
+        <meta
+          property="og:image:alt"
+          content="네온 라인과 JC PORTFOLIO 타이틀이 표시된 포트폴리오 메인 화면"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="이종찬 | Game UI/UX Designer" />
+        <meta
+          name="twitter:description"
+          content="게임 UI/UX 디자이너 이종찬의 프로젝트와 개인 포트폴리오입니다."
+        />
+        <meta
+          name="twitter:image"
+          content="https://jc-portfolio-ten.vercel.app/images/og-portfolio.png?v=20260815-2"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#050505" />
       </Head>

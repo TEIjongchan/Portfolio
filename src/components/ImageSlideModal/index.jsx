@@ -47,6 +47,9 @@ function ImageSlideModal({ images, selectedImageIndex, isOpen, handleClose }) {
   if (!isOpen || !images[index]) return null;
 
   const image = images[index];
+  const mobileImage = image.url.toLowerCase().endsWith(".webp")
+    ? image.url.replace(/\.webp$/i, ".mobile.webp")
+    : null;
 
   return (
     <PortalContainer className="modalContainer">
@@ -70,7 +73,12 @@ function ImageSlideModal({ images, selectedImageIndex, isOpen, handleClose }) {
             touchStartX.current = null;
           }}
         >
-          <S.GameImg src={image.url} alt={image.text || "작품 이미지"} />
+          <picture>
+            {mobileImage && (
+              <source media="(max-width: 768px)" srcSet={mobileImage} />
+            )}
+            <S.GameImg src={image.url} alt={image.text || "작품 이미지"} />
+          </picture>
           <S.Caption aria-live="polite">
             <span>{image.text}</span>
             <small>
@@ -164,6 +172,10 @@ const S = {
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    picture {
+      display: contents;
+    }
   `,
   GameImg: styled.img`
     display: block;

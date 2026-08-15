@@ -3,6 +3,11 @@ import Link from "next/link";
 import styled from "styled-components";
 
 function WorkList({ items, basePath }) {
+  const getMobileImage = (url) =>
+    url.toLowerCase().endsWith(".webp")
+      ? url.replace(/\.webp$/i, ".mobile.webp")
+      : null;
+
   return (
     <S.Wrapper>
       {items.map((item, index) => (
@@ -29,14 +34,21 @@ function WorkList({ items, basePath }) {
               </S.Info>
               <S.ImageWrapper viewType={item.type}>
                 {item.imageUrl.map((image, imageIndex) => (
-                  <S.GameImage
-                    key={image}
-                    src={image}
-                    alt={`${item.name} 대표 화면 ${imageIndex + 1}`}
-                    viewType={item.type}
-                    loading={index === 0 ? "eager" : "lazy"}
-                    decoding="async"
-                  />
+                  <picture key={image}>
+                    {getMobileImage(image) && (
+                      <source
+                        media="(max-width: 768px)"
+                        srcSet={getMobileImage(image)}
+                      />
+                    )}
+                    <S.GameImage
+                      src={image}
+                      alt={`${item.name} 대표 화면 ${imageIndex + 1}`}
+                      viewType={item.type}
+                      loading={index === 0 ? "eager" : "lazy"}
+                      decoding="async"
+                    />
+                  </picture>
                 ))}
               </S.ImageWrapper>
             </S.Card>
@@ -138,6 +150,11 @@ const S = {
     width: min(792px, 100%);
     margin-left: auto;
     overflow: hidden;
+
+    picture {
+      display: block;
+      width: 100%;
+    }
 
     @media (max-width: 560px) {
       grid-template-columns: ${({ viewType }) =>

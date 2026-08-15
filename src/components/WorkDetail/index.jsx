@@ -12,6 +12,10 @@ function WorkDetail({ items }) {
     ? router.query.name[0]
     : router.query.name;
   const item = items.find((work) => work.name === name);
+  const getMobileImage = (url) =>
+    url.toLowerCase().endsWith(".webp")
+      ? url.replace(/\.webp$/i, ".mobile.webp")
+      : null;
 
   if (!router.isReady) return null;
 
@@ -104,13 +108,21 @@ function WorkDetail({ items }) {
               }}
               aria-label={`${image.text || item.name} 크게 보기`}
             >
-              <S.GameImage
-                viewType={image.type}
-                src={image.url}
-                alt={image.text || `${item.name} 화면 ${index + 1}`}
-                loading={index < 2 ? "eager" : "lazy"}
-                decoding="async"
-              />
+              <picture>
+                {getMobileImage(image.url) && (
+                  <source
+                    media="(max-width: 768px)"
+                    srcSet={getMobileImage(image.url)}
+                  />
+                )}
+                <S.GameImage
+                  viewType={image.type}
+                  src={image.url}
+                  alt={image.text || `${item.name} 화면 ${index + 1}`}
+                  loading={image.url.endsWith(".webp") ? "lazy" : index < 2 ? "eager" : "lazy"}
+                  decoding="async"
+                />
+              </picture>
               {image.text && <span>{image.text}</span>}
             </S.DetailImage>
           ))}
@@ -172,6 +184,11 @@ const S = {
   Wrapper: styled.div`
     color: #ffffff;
     text-align: center;
+
+    picture {
+      display: block;
+      width: 100%;
+    }
     background: #050505;
   `,
   ContentWrapper: styled.div`
