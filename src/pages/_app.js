@@ -60,11 +60,11 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/TEIjongchan/Portfolio/main/public/images/og-portfolio.png?v=20260815-3"
+          content="https://raw.githubusercontent.com/TEIjongchan/Portfolio/main/public/images/og-portfolio.png?v=20260815-4"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1037" />
-        <meta property="og:image:height" content="705" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
           content="네온 라인과 JC PORTFOLIO 타이틀이 표시된 포트폴리오 메인 화면"
@@ -77,7 +77,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="https://raw.githubusercontent.com/TEIjongchan/Portfolio/main/public/images/og-portfolio.png?v=20260815-3"
+          content="https://raw.githubusercontent.com/TEIjongchan/Portfolio/main/public/images/og-portfolio.png?v=20260815-4"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#050505" />
