@@ -49,6 +49,7 @@ html {
   -ms-text-size-adjust: 100%; /* 5 */
   -webkit-text-size-adjust: 100%; /* 5 */
   word-break: break-word; /* 6 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -62,6 +63,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Pretendard', sans-serif;
+  color: #1e1e1e;
+  background: #fff;
+  overflow-x: hidden;
 }
 
 /**
@@ -242,6 +246,7 @@ iframe {
 
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 /**
@@ -610,10 +615,46 @@ a:hover, a:link, a:visited, a:active {
 
 a,
 button {
-  outline: none !important;
   cursor: pointer;
   border: none;
   background: none;
+}
+
+:focus-visible {
+  outline: 2px solid #1e1e1e;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  top: 12px;
+  left: 12px;
+  padding: 10px 14px;
+  color: #fff;
+  background: #1e1e1e;
+  border-radius: 4px;
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 blockquote,

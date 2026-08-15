@@ -1,9 +1,100 @@
 export const PROJECT_CONSTANT = [
+  // AION 2
+  {
+    name: "AION 2",
+    genre: ["PC", "모바일", "MMORPG"],
+    date: "2023.10 ~ 2025.11",
+    listDescription: "",
+    description:
+      "'아이온2'는 PC와 모바일 환경을 지원하는 대규모 MMORPG로,<br/>각 플랫폼에 맞는 UI·UX와 게임 플레이 경험을 제공하는 프로젝트입니다.",
+    iconUrl: [
+      "/images/icon/Icon_Tool_Unreal.png",
+      "/images/icon/Icon_Tool_Ps.png",
+      "/images/icon/Icon_Tool_Ai.png",
+    ],
+    imageUrl: [
+      "/images/project/Aion2/0.png",
+      "/images/project/Aion2/1.png",
+    ],
+    type: "horizontal",
+    source:
+      "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    detailImage: [
+      ["0.png", "메인화면"],
+      ["1.png", "거래화면"],
+      ["2.png", "보급의뢰"],
+      ["3.png", "제작관리"],
+      ["3_1.webp", "물질변환 연출"],
+      ["4.png", "스킬화면"],
+      ["4_1.webp", "특화스킬 연출"],
+      ["5.png", "옷장"],
+      ["6.png", "옷장 상점"],
+      ["7.png", "염색"],
+      ["7_1.webp", "외형합성"],
+      ["8.png", "수집효과 팝업"],
+      ["9.png", "결제팝업"],
+      ["10.png", "합성확률팝업"],
+      ["11.png", "투기장"],
+      ["12.png", "투기장 HUD 1"],
+      ["13.png", "투기장 HUD 2"],
+      ["14.png", "시즌보상팝업"],
+      ["15.png", "게임 네비게이터"],
+      ["16.png", "설정"],
+      ["모바일_0.png", "모바일 HUD"],
+      ["모바일_1.png", "모바일 제작화면"],
+      ["모바일_2.png", "모바일 보급의뢰"],
+      ["모바일_3.png", "모바일 스킬"],
+      ["모바일_4.png", "모바일 옷장"],
+      ["모바일_5.png", "모바일 설정"],
+    ].map(([file, text]) => ({
+        url: `/images/project/Aion2/${file}`,
+        text,
+        type: "horizontal",
+      })),
+    history: [
+      {
+        name: "프로젝트에서 작업한 내용",
+        list: [
+          {
+            title: "UI·UX",
+            content: [
+              { text: "PC 및 모바일 UI·UX 디자인", type: "text" },
+              { text: "GUI 연출 및 엔진 작업", type: "text" },
+              { text: "플랫폼별 UX 플로우 및 화면 대응", type: "text" },
+            ],
+          },
+        ],
+      },
+      {
+        name: "프로젝트를 통해 얻은 경험",
+        list: [
+          {
+            title: "멀티 플랫폼 UI·UX 경험",
+            content: [
+              {
+                text: "PC와 모바일의 서로 다른 조작 환경과 화면 비율을 고려해 일관된 게임 경험을 설계하고 구현했습니다.",
+                type: "text",
+              },
+              {
+                text: "하나의 언리얼 위젯파일로 다해상도를 최대한 대응가능하게 하는 프로젝트 경험을 배웠습니다.",
+                type: "text",
+              },
+              {
+                text: "MMORPG의 다양한 컨텐츠 시스템과 서로 상호작용 연결되는 UIUX설계를 배웠습니다.",
+                type: "text",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+
   // Chrono Odyssey
   {
     name: "Chrono Odyssey",
     genre: ["콘솔", "MMORPG"],
-    date: "2023.",
+    date: "2022.11 ~ 2023.08",
     listDescription: "",
     description:
       "'크로노 오디세이'는 언리얼 기반으로 제작된 게임으로서<br/>PC 뿐만 아니라 콘솔도 지원하는 것을 목표로 하는 대규모 MMORPG 입니다.",
@@ -13,24 +104,38 @@ export const PROJECT_CONSTANT = [
       "/images/icon/Icon_Tool_Ai.png",
     ],
     imageUrl: [
-      "/images/project/Chrono/Chrono_0.png",
-      "/images/project/Chrono/Chrono_1.png",
+      "/images/project/Chrono/0.png",
+      "/images/project/Chrono/1.png",
     ],
     type: "horizontal",
-    source: "",
+    source:
+      "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
     detailImage: [
-      {
-        // 1st
-        url: "/images/project/Chrono/Chrono_0.png",
-        text: "",
-        type: "horizontal",
-      },
-      {
-        url: "/images/project/Chrono/Chrono_1.png",
-        text: "",
-        type: "horizontal",
-      },
-    ],
+      ["0.png", "메인화면"],
+      ["1.png", "캐릭터 선택창"],
+      ["2.png", "로딩화면"],
+      ["3.png", "전투(보스게이지)"],
+      ["4.png", "퀘스트노티"],
+      ["5.png", "데미지 폰트"],
+      ["6.png", "캐릭터 정보"],
+      ["7.png", "아이템정보"],
+      ["8.png", "대화"],
+      ["9.png", "콘솔UI 대응"],
+      ["10.png", "크로노텍터창"],
+      ["11.png", "스킬"],
+      ["12.webp", "대화연출"],
+      ["13.webp", "스킬해금연출"],
+      ["14.webp", "데미지폰트연출"],
+      ["15.webp", "월드해금연출"],
+      ["16.webp", "퀘스트완료"],
+      ["17.webp", "보스게이지연출"],
+      ["18.webp", "무기교체 HUD연출"],
+      ["19.webp", "크로노텍터창 오픈연출"],
+    ].map(([file, text]) => ({
+      url: `/images/project/Chrono/${file}`,
+      text,
+      type: "horizontal",
+    })),
     history: [
       {
         name: "프로젝트에서 작업한 내용",

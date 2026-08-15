@@ -8,8 +8,8 @@ function History() {
           <div className="title">경력</div>
           <S.HistoryList>
             {HISTORY_CONSTANT.career.map((item) => (
-              <S.HistoryItem key={item.name}>
-                <S.Nmae>{item.name}</S.Nmae>
+              <S.HistoryItem key={`${item.name}-${item.date}`}>
+                <S.Name>{item.name}</S.Name>
                 <hr />
                 <S.Info>
                   <p>{item.job}</p>
@@ -31,13 +31,17 @@ function History() {
 }
 
 const S = {
-  Wrapper: styled.div`
+  Wrapper: styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 160px 0;
     background: #f6f6f6;
+
+    @media (max-width: 768px) {
+      padding: 96px 16px;
+    }
   `,
   HistoryWrapper: styled.div`
     display: flex;
@@ -46,7 +50,7 @@ const S = {
   `,
   HistoryContent: styled.div`
     text-align: center;
-    width: 8000px;
+    width: min(720px, calc(100vw - 32px));
     color: #1e1e1e;
 
     .title {
@@ -63,6 +67,17 @@ const S = {
     display: grid;
     grid-template-columns: 180px 24px 180px;
     justify-content: center;
+
+    @media (max-width: 560px) {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #d9d9d9;
+
+      hr {
+        display: none;
+      }
+    }
 
     p {
       font-weight: 400;
@@ -95,8 +110,13 @@ const S = {
       }
     }
   `,
-  Nmae: styled.p`
+  Name: styled.p`
     text-align: right;
+
+    @media (max-width: 560px) {
+      text-align: left;
+      font-weight: 500;
+    }
   `,
   Info: styled.div`
     text-align: left;

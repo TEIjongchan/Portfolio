@@ -1,132 +1,106 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import PortalContainer from "../PortalContainer";
-import ArrowLine from "../../components/icon/ArrowLine";
-import { motion, useMotionValue, animate } from "framer-motion";
+import ArrowLine from "../icon/ArrowLine";
 
 function ImageSlideModal({ images, selectedImageIndex, isOpen, handleClose }) {
-  const [index, setIndex] = useState(0);
-  const [beforeIndex, setBeforeIndex] = useState(null);
-  const containerRef = useRef(null);
-  const x = useMotionValue(0);
+  const [index, setIndex] = useState(selectedImageIndex || 0);
+  const closeButtonRef = useRef(null);
+  const touchStartX = useRef(null);
 
-  const pageStyle = {
-    width: "100%",
-    height: "100%",
-    display: "inline-block",
-    flex: "none",
-    textAlign: "center",
-  };
+  const handlePrev = useCallback(() => {
+    setIndex((current) => Math.max(0, current - 1));
+  }, []);
 
-  const transition = {
-    type: "spring",
-    bounce: 0,
-  };
+  const handleNext = useCallback(() => {
+    setIndex((current) => Math.min(images.length - 1, current + 1));
+  }, [images.length]);
 
   useEffect(() => {
+    if (!isOpen) return undefined;
+
+    setIndex(selectedImageIndex);
+    const previousActiveElement = document.activeElement;
+    const focusTimer = window.setTimeout(() => closeButtonRef.current?.focus(), 0);
+
     const handleKeyDown = (event) => {
-      if (isOpen && event.key === "Escape") {
+      if (event.key === "Escape") {
         event.preventDefault();
         handleClose();
+      } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        handlePrev();
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        handleNext();
       }
     };
 
-    if (isOpen) {
-      setBeforeIndex(selectedImageIndex);
-      setIndex(selectedImageIndex);
-    }
-
     window.addEventListener("keydown", handleKeyDown);
-
     return () => {
+      window.clearTimeout(focusTimer);
       window.removeEventListener("keydown", handleKeyDown);
+      previousActiveElement?.focus?.();
     };
-  }, [isOpen]);
+  }, [handleClose, handleNext, handlePrev, isOpen, selectedImageIndex]);
 
-  useEffect(() => {
-    const indexCheck = index - beforeIndex;
+  if (!isOpen || !images[index]) return null;
 
-    if (indexCheck === 1 || indexCheck === -1) {
-      const controls = animate(x, calculateNewX(), transition);
-      return controls.stop;
-    } else {
-      x.set(calculateNewX());
-    }
-  }, [index]);
-
-  const handleClickBackground = () => {
-    handleClose();
-    setIndex(0);
-    setBeforeIndex(null);
-  };
-
-  const calculateNewX = () => -index * (containerRef.current?.clientWidth || 0);
-
-  // drag
-  const handleEndDrag = (e, dragProps) => {
-    const clientWidth = containerRef.current?.clientWidth || 0;
-
-    const { offset } = dragProps;
-
-    if (offset.x > clientWidth / 4) {
-      handlePrev();
-    } else if (offset.x < -clientWidth / 4) {
-      handleNext();
-    } else {
-      animate(x, calculateNewX(), transition);
-    }
-  };
-
-  const handlePrev = () => {
-    if (index === 0) return;
-
-    setBeforeIndex(index);
-    setIndex((prev) => prev - 1);
-  };
-
-  const handleNext = () => {
-    if (index === images.length - 1) return;
-
-    setBeforeIndex(index);
-    setIndex((prev) => prev + 1);
-  };
-
-  if (!isOpen) {
-    return null;
-  }
+  const image = images[index];
 
   return (
     <PortalContainer className="modalContainer">
       <S.ModalGlobalStyle />
-      <S.Wrapper>
-        <S.Background onClick={handleClickBackground} />
-        <S.Content>
-          <S.CarouselWrapper>
-            <S.Carousel ref={containerRef}>
-              {images.map((image, i) => (
-                <motion.div
-                  key={i}
-                  style={{
-                    ...pageStyle,
-                    x,
-                    left: `${i * 100}%`,
-                    right: `${i * 100}%`,
-                  }}
-                >
-                  <S.GameImg src={image.url} />
-                </motion.div>
-              ))}
-              <S.Prev onClick={() => handlePrev()}>
-                <ArrowLine width={16} height={32} />
-              </S.Prev>
-              <S.Next onClick={() => handleNext()}>
-                <ArrowLine width={16} height={32} />
-              </S.Next>
-            </S.Carousel>
-          </S.CarouselWrapper>
+      <S.Wrapper
+        role="dialog"
+        aria-modal="true"
+        aria-label={`${image.text || "작품 이미지"} 확대 보기`}
+      >
+        <S.Background onClick={handleClose} aria-hidden="true" />
+        <S.Content
+          onTouchStart={(event) => {
+            touchStartX.current = event.touches[0]?.clientX;
+          }}
+          onTouchEnd={(event) => {
+            if (touchStartX.current === null) return;
+            const endX = event.changedTouches[0]?.clientX ?? touchStartX.current;
+            const distance = endX - touchStartX.current;
+            if (distance > 50) handlePrev();
+            if (distance < -50) handleNext();
+            touchStartX.current = null;
+          }}
+        >
+          <S.GameImg src={image.url} alt={image.text || "작품 이미지"} />
+          <S.Caption aria-live="polite">
+            <span>{image.text}</span>
+            <small>
+              {index + 1} / {images.length}
+            </small>
+          </S.Caption>
         </S.Content>
-        <S.Close onClick={handleClickBackground}>
-          <img src={"/images/close.png"} alt="close" />
+        <S.Prev
+          type="button"
+          onClick={handlePrev}
+          disabled={index === 0}
+          aria-label="이전 이미지"
+        >
+          <ArrowLine width={16} height={32} />
+        </S.Prev>
+        <S.Next
+          type="button"
+          onClick={handleNext}
+          disabled={index === images.length - 1}
+          aria-label="다음 이미지"
+        >
+          <ArrowLine width={16} height={32} />
+        </S.Next>
+        <S.Close
+          ref={closeButtonRef}
+          type="button"
+          onClick={handleClose}
+          aria-label="확대 이미지 닫기"
+        >
+          <img src="/images/close.png" alt="" aria-hidden="true" />
         </S.Close>
       </S.Wrapper>
     </PortalContainer>
@@ -135,95 +109,130 @@ function ImageSlideModal({ images, selectedImageIndex, isOpen, handleClose }) {
 
 export default ImageSlideModal;
 
+const controlStyles = `
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 48px;
+  height: 72px;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.28);
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+`;
+
 const S = {
   ModalGlobalStyle: createGlobalStyle`
-     body {
-       overflow: hidden;
-     }
-   `,
+    body {
+      overflow: hidden;
+    }
+  `,
   Wrapper: styled.div`
-    width: 100vw;
-    height: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     z-index: 1171;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100dvh;
+    padding: 72px 96px 48px;
+
+    @media (max-width: 768px) {
+      padding: 72px 16px 96px;
+    }
   `,
   Background: styled.div`
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
   `,
   Content: styled.div`
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-  `,
-  CarouselWrapper: styled.div`
-    width: 100vw;
-    height: 100%;
-  `,
-  Carousel: styled.div`
     position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    z-index: 1;
     display: flex;
+    width: min(1200px, 100%);
+    max-height: 100%;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+  `,
+  GameImg: styled.img`
+    display: block;
+    max-width: 100%;
+    max-height: calc(100dvh - 180px);
+    object-fit: contain;
+  `,
+  Caption: styled.div`
+    display: flex;
+    min-height: 24px;
+    align-items: center;
+    gap: 16px;
+    color: #fff;
+    font-size: 16px;
+
+    small {
+      opacity: 0.65;
+    }
   `,
   Close: styled.button`
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 64px;
-    height: 64px;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 4px;
 
     img {
-      width: 64px;
-      height: 64px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+      top: 12px;
+      right: 12px;
+      width: 44px;
+      height: 44px;
     }
   `,
   Prev: styled.button`
-    position: absolute;
-    top: 50%;
-    left: 48px;
+    ${controlStyles}
+    left: 24px;
 
     svg {
       transform: rotate(180deg);
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 350%;
-      height: 250%;
+    @media (max-width: 768px) {
+      top: auto;
+      bottom: 16px;
+      left: calc(50% - 72px);
+      transform: none;
     }
   `,
   Next: styled.button`
-    position: absolute;
-    top: 50%;
-    right: 48px;
+    ${controlStyles}
+    right: 24px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 350%;
-      height: 250%;
+    @media (max-width: 768px) {
+      top: auto;
+      right: calc(50% - 72px);
+      bottom: 16px;
+      transform: none;
     }
-  `,
-  GameImg: styled.img`
-    max-width: 1050px;
-    max-height: 1050px;
-    margin: 0 auto;
   `,
 };
