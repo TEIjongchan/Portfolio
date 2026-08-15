@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 function WorkList({ items, basePath }) {
@@ -9,7 +8,7 @@ function WorkList({ items, basePath }) {
       {items.map((item, index) => (
         <Fragment key={item.name}>
           <Link href={`${basePath}/${encodeURIComponent(item.name)}`} passHref>
-            <S.Card whileHover={{ y: -3 }}>
+            <S.Card>
               <S.Info>
                 <h1>{item.name}</h1>
                 <p>{item.genre.join(" / ")}</p>
@@ -63,7 +62,7 @@ const S = {
       padding: 72px 0 120px;
     }
   `,
-  Card: styled(motion.a)`
+  Card: styled.a`
     display: flex;
     position: relative;
     gap: 56px;
@@ -85,11 +84,6 @@ const S = {
     &:focus-visible::before {
       opacity: 1;
       transform: scaleY(1);
-    }
-
-    &:hover > div:last-child img {
-      transform: scale(1.05);
-      filter: saturate(1.08);
     }
 
     &:focus-visible {
@@ -160,7 +154,6 @@ const S = {
       viewType === "vertical" ? "9 / 16" : "16 / 9"};
     object-fit: cover;
     background: #0a0a0a;
-    transition: transform 2s cubic-bezier(0.22, 1, 0.36, 1), filter 2s ease;
     filter: saturate(0.86);
 
   `,

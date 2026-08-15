@@ -313,11 +313,6 @@ const S = {
       color: rgba(255, 255, 255, 0.48);
     }
 
-    &:hover img {
-      transform: translateY(-3px);
-      transform: scale(1.05);
-    }
-
     &:focus-visible {
       outline: 2px solid #ffffff;
       outline-offset: 6px;
@@ -327,8 +322,6 @@ const S = {
     width: 100%;
     height: auto;
     background: #0a0a0a;
-    transition: transform 2s cubic-bezier(0.22, 1, 0.36, 1);
-
     @media (max-width: 680px) {
       width: ${({ viewType }) => (viewType === "vertical" ? "78%" : "100%")};
     }
