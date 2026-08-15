@@ -14,6 +14,7 @@ function TubesCanvas({ tubesRef }) {
 
   useEffect(() => {
     let mounted = true;
+    let disposePerformanceControls = () => {};
 
     const initTubes = async () => {
       try {
@@ -27,7 +28,22 @@ function TubesCanvas({ tubesRef }) {
         const deviceMemory = navigator.deviceMemory || 4;
         const isLowPower = hardwareConcurrency <= 4 || deviceMemory <= 4;
         const isCompact = isCoarsePointer || window.innerWidth <= 768;
-        const targetFps = isLowPower || isCompact ? 30 : 40;
+        const platform =
+          navigator.userAgentData?.platform ||
+          navigator.platform ||
+          navigator.userAgent;
+        const isWindows = /win/i.test(platform);
+        const isLargeViewport =
+          window.innerWidth * window.innerHeight >= 2560 * 1200;
+        const shouldReduceQuality =
+          isLowPower || isCompact || isWindows || isLargeViewport;
+        const targetFps = isLowPower ? 24 : shouldReduceQuality ? 30 : 40;
+        const maxRenderPixels = isCompact
+          ? 900_000
+          : shouldReduceQuality
+          ? 1_600_000
+          : 2_800_000;
+        const maxPixelRatio = shouldReduceQuality ? 1 : 1.25;
 
         const tubesModule = await import(
           /* webpackIgnore: true */
@@ -36,14 +52,18 @@ function TubesCanvas({ tubesRef }) {
         if (!mounted || !canvasRef.current) return;
 
         const tubes = tubesModule.default(canvasRef.current, {
-          bloom: isLowPower
+          bloom: shouldReduceQuality
             ? false
             : { threshold: 0.05, strength: 1.1, radius: 0.35 },
           tubes: {
-            count: isCompact ? 7 : 10,
+            count: isCompact ? 6 : shouldReduceQuality ? 7 : 10,
             colors: ["#f967fb", "#53bc28", "#6958d5"],
-            minTubularSegments: 24,
-            maxTubularSegments: isCompact ? 48 : 72,
+            minTubularSegments: shouldReduceQuality ? 20 : 24,
+            maxTubularSegments: isCompact
+              ? 36
+              : shouldReduceQuality
+              ? 48
+              : 72,
             lights: {
               intensity: 200,
               colors: ["#83f36e", "#fe8a2e", "#ff008a", "#60aed5"],
@@ -51,31 +71,69 @@ function TubesCanvas({ tubesRef }) {
           },
         });
 
-        // The library forces a 2x pixel ratio by default. On high-DPI Windows
-        // displays that can render more than four times as many pixels as needed.
-        const pixelRatio = isCompact || isLowPower ? 1 : 1.25;
-        tubes.three.minPixelRatio = pixelRatio;
-        tubes.three.maxPixelRatio = pixelRatio;
-        tubes.three.resize();
+        // Keep the GPU workload stable even on 1440p/4K Windows displays.
+        // The canvas stays full-size in CSS while its internal resolution is
+        // capped to a pixel budget that is still sharp enough for moving lines.
+        const applyRenderBudget = () => {
+          const viewportPixels = Math.max(
+            1,
+            window.innerWidth * window.innerHeight
+          );
+          const pixelRatio = Math.min(
+            maxPixelRatio,
+            Math.max(0.45, Math.sqrt(maxRenderPixels / viewportPixels))
+          );
+
+          tubes.three.minPixelRatio = pixelRatio;
+          tubes.three.maxPixelRatio = pixelRatio;
+          tubes.three.resize();
+        };
+
+        applyRenderBudget();
 
         // Cap the WebGL loop while keeping cursor movement visually smooth.
-        const originalBeforeRender = tubes.three.onBeforeRender;
+        const originalBeforeRender =
+          tubes.three.onBeforeRender?.bind(tubes.three) || (() => {});
         const originalRender = tubes.three.render.bind(tubes.three);
         const frameInterval = 1000 / targetFps;
         let lastFrame = 0;
         let shouldRender = false;
+        let canvasIsVisible = true;
+        let resizeTimer;
 
-        tubes.three.onBeforeRender = (time) => {
+        tubes.three.onBeforeRender = (...args) => {
+          if (document.hidden || !canvasIsVisible) return;
+
           const now = performance.now();
           if (now - lastFrame < frameInterval) return;
           lastFrame = now;
           shouldRender = true;
-          originalBeforeRender(time);
+          originalBeforeRender(...args);
         };
         tubes.three.render = () => {
           if (!shouldRender) return;
           shouldRender = false;
           originalRender();
+        };
+
+        const visibilityObserver = new IntersectionObserver(
+          ([entry]) => {
+            canvasIsVisible = entry.isIntersecting;
+          },
+          { threshold: 0.01 }
+        );
+        visibilityObserver.observe(canvasRef.current);
+
+        const handleResize = () => {
+          window.clearTimeout(resizeTimer);
+          resizeTimer = window.setTimeout(applyRenderBudget, 120);
+        };
+        window.addEventListener("resize", handleResize, { passive: true });
+
+        disposePerformanceControls = () => {
+          visibilityObserver.disconnect();
+          window.removeEventListener("resize", handleResize);
+          window.clearTimeout(resizeTimer);
         };
 
         tubesRef.current = tubes;
@@ -88,6 +146,7 @@ function TubesCanvas({ tubesRef }) {
 
     return () => {
       mounted = false;
+      disposePerformanceControls();
       tubesRef.current?.dispose?.();
       tubesRef.current = null;
     };
