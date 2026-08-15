@@ -1,30 +1,26 @@
 import styled from "styled-components";
-import ArrowLine from "../../../components/icon/ArrowLine";
 import { motion } from "framer-motion";
 import { forwardRef } from "react";
 
-const SectionCover = forwardRef(({ onClick }, ref) => {
+const SectionCover = forwardRef((props, ref) => {
   return (
-    <S.SectionCoverWrapper ref={ref}>
+    <S.SectionCoverWrapper ref={ref} aria-label="포트폴리오 소개 영상">
       <S.SectionImgWrapper>
-        <S.TextWrapper>
-          <S.Title>
-          </S.Title>
-          <S.SubTilte></S.SubTilte>
-        </S.TextWrapper>
-        <video autoPlay loop muted playsInline width="100%">
+        <video autoPlay loop muted playsInline preload="metadata" width="100%">
           <source
-            key="/images/main.mp4"
             src="/images/main.mp4"
             type="video/mp4"
           />
         </video>
       </S.SectionImgWrapper>
       <S.ArrowWrapper
+        as="a"
+        href="#profile"
+        aria-label="프로필과 경력 보기"
         animate={{ y: 10 }}
         transition={{ repeat: Infinity, duration: 1, repeatType: "reverse" }}
       >
-        <img src="/images/icon/mouse.svg" />
+        <img src="/images/icon/mouse.svg" alt="" aria-hidden="true" />
       </S.ArrowWrapper>
     </S.SectionCoverWrapper>
   );
@@ -35,18 +31,6 @@ SectionCover.displayName = "sectionCover";
 export default SectionCover;
 
 const S = {
-  TextWrapper: styled.div`
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    text-align: right;
-    width: 1200px;
-    gap: 24px;
-  `,
   SectionCoverWrapper: styled(motion.section)`
     position: relative;
     width: 100%;
@@ -54,33 +38,14 @@ const S = {
     background-color: #131317;
     overflow: hidden;
 
-    cursor: pointer;
-  `,
-  Title: styled.h1`
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 115px;
-    text-align: right;
-
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-  `,
-  SubTilte: styled.h2`
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: right;
   `,
   SectionImgWrapper: styled.div`
-    max-width: 1080px;
     height: 100%;
     margin: 0 auto;
-    color: #fff;
 
     video {
       position: absolute;
+      inset: 0;
       left: 0;
       width: 100%;
       height: 100%;
@@ -94,11 +59,15 @@ const S = {
     left: 50%;
     bottom: 80px;
     transform: translate(-50%, -50%);
+    z-index: 2;
 
-    cursor: pointer;
+    img {
+      width: 16px;
+      height: 24px;
+    }
 
-    svg {
-      transform: rotate(90deg);
+    @media (max-width: 768px) {
+      bottom: 40px;
     }
   `,
 };

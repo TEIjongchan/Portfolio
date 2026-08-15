@@ -5,8 +5,8 @@ function Contact() {
     <S.ContactWrapper>
       <S.Title>Contact me</S.Title>
       <S.Email>
-        <img src={"/images/icon/Icon_Mail.svg"} />
-        hshshs6349@gmail.com
+        <img src="/images/icon/Icon_Mail.svg" alt="" aria-hidden="true" />
+        <a href="mailto:hshshs6349@gmail.com">hshshs6349@gmail.com</a>
       </S.Email>
       <S.ContactList>
         <a
@@ -37,6 +37,7 @@ const S = {
     flex-direction: column;
     color: #1e1e1e;
     text-align: left;
+    width: 100%;
   `,
   Title: styled.p`
     font-weight: 200;
@@ -51,6 +52,21 @@ const S = {
     margin-top: 24px;
     align-items: center;
     gap: 16px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #1e1e1e;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      gap: 10px;
+    }
   `,
   ContactList: styled.ul`
     display: flex;
@@ -60,6 +76,11 @@ const S = {
     color: #2b2b2f;
     align-items: center;
     margin-top: 60px;
+
+    a:focus-visible {
+      outline: 2px solid #1e1e1e;
+      outline-offset: 4px;
+    }
 
     hr {
       width: 2px;

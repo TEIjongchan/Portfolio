@@ -12,7 +12,7 @@ export const HISTORY_CONSTANT = {
   career: [
     {
       name: "(주) 111퍼센트",
-      job: "디자이너로 근무",
+      job: "디자이너",
       date: "2016.11 - 2021.11",
       workDetail: ["신규게임 개발"],
     },
@@ -27,10 +27,14 @@ export const HISTORY_CONSTANT = {
     {
       name: "(주) NCSOFT",
       job: "UI/UX 디자이너",
-      date: "2023.10 - (현재).",
-      workDetail: [
-        "아이온2 UIUX 작업 "
-      ],
+      date: "2023.10 - 2025.11",
+      workDetail: ["아이온2 UIUX 작업"],
+    },
+    {
+      name: "(주) 111퍼센트",
+      job: "UI/UX 디자이너",
+      date: "2025.12 - (현재).",
+      workDetail: ["신규개발팀 UIUX 업무"],
     },
   ],
 };

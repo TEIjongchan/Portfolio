@@ -4,11 +4,16 @@ function Footer() {
   return (
     <S.Container>
       <S.Wrapper>
-        <S.ProfileImg src="/images/Profile.png" alt="profile" />
+        <S.ProfileImg
+          src="/images/Profile.png"
+          alt="이종찬 프로필"
+          loading="lazy"
+          decoding="async"
+        />
         <S.ProfileInfo>
           <S.Name>이종찬</S.Name>
           <S.Job>Game UI/UX Designer</S.Job>
-          <S.Email>
+          <S.Email href="mailto:hshshs6349@gmail.com">
             <img src="/images/icon/Icon_Mail.svg" alt="mail icon" />
             hshshs6349@gmail.com
           </S.Email>
@@ -44,15 +49,28 @@ const S = {
   `,
   Wrapper: styled.div`
     display: flex;
-    width: 1200px;
+    width: min(1200px, calc(100% - 48px));
     margin: 0 auto;
     padding: 24px 0 48px 0;
+
+    @media (max-width: 768px) {
+      width: min(calc(100% - 32px), 560px);
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 32px 0;
+    }
   `,
   ProfileImg: styled.img`
     width: 160px;
     height: 160px;
 
     border-radius: 4px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 96px;
+      height: 96px;
+    }
   `,
   ProfileInfo: styled.div`
     display: flex;
@@ -62,6 +80,10 @@ const S = {
 
     justify-content: end;
     gap: 8px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   `,
   Name: styled.p`
     font-weight: 400;
@@ -73,7 +95,7 @@ const S = {
     font-size: 20px;
     line-height: 24px;
   `,
-  Email: styled.span`
+  Email: styled.a`
     display: flex;
     align-items: center;
     gap: 8px;
@@ -83,6 +105,15 @@ const S = {
 
     margin-top: 24px;
     margin-bottom: 8px;
+
+    &:focus-visible {
+      outline: 2px solid #1e1e1e;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 560px) {
+      font-size: 15px;
+    }
   `,
   ContactInfo: styled.div`
     display: flex;
@@ -122,6 +153,16 @@ const S = {
     align-items: flex-end;
     margin-left: auto;
     margin-bottom: 8px;
+
+    a:focus-visible {
+      outline: 2px solid #1e1e1e;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
 
     hr {
       width: 2px;

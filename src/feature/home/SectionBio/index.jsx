@@ -1,15 +1,10 @@
 import styled from "styled-components";
-import Header from "../../layout/Header";
-import Contact from "./Contact";
-import History from "./History";
 import Profile from "./Profile";
+import { forwardRef } from "react";
 
-import useIntersectionObserver from "../../../hooks/useIntersectionObserver";
-import { forwardRef, useRef } from "react";
-
-const SectionBio = forwardRef(({ scrollMargin }, ref) => {
+const SectionBio = forwardRef((props, ref) => {
   return (
-    <S.SectionBioWrapper ref={ref}>
+    <S.SectionBioWrapper id="profile" ref={ref}>
       <Profile />
     </S.SectionBioWrapper>
   );
@@ -21,15 +16,14 @@ export default SectionBio;
 
 const S = {
   SectionBioWrapper: styled.section`
-    width: 1200px;
+    width: min(1200px, calc(100% - 48px));
     padding: 160px 0 120px 0;
     margin: 0 auto;
-  `,
-  Hr: styled.hr`
-    width: 100%;
-    height: 2px;
-    margin-top: 120px;
-    margin-bottom: 96px;
-    background-color: #d9d9d9;
+
+    @media (max-width: 768px) {
+      width: min(calc(100% - 32px), 560px);
+      padding: 96px 0 80px;
+      scroll-margin-top: 64px;
+    }
   `,
 };
