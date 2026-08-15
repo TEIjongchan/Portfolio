@@ -46,17 +46,17 @@ function Header() {
       aria-label="주요 메뉴"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      isSticky={isSticky}
-      isMain={isMain}
+      $isSticky={isSticky}
+      $isMain={isMain}
     >
-      <S.Menu isSticky={isSticky}>
+      <S.Menu $isSticky={isSticky}>
         {menuItems.map((item) => (
           <li key={item.path}>
             <Link href={item.path} passHref>
               <S.MenuItem
-                isSticky={isSticky}
-                isDark={!isMain || isSticky}
-                isSelected={isSelected(item.path)}
+                $isSticky={isSticky}
+                $isDark={!isMain || isSticky}
+                $isSelected={isSelected(item.path)}
                 aria-current={isSelected(item.path) ? "page" : undefined}
               >
                 <img src={getIcon(item)} alt="" aria-hidden="true" />

@@ -62,10 +62,29 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Pretendard', sans-serif;
-  color: #1e1e1e;
-  background: #fff;
+  font-family: 'Inter', 'Pretendard', sans-serif;
+  color: #ffffff;
+  background: #050505;
   overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Clash Display', 'Pretendard', sans-serif;
+  letter-spacing: -0.04em;
+}
+
+::selection {
+  color: #050505;
+  background: #ffffff;
+}
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main > * { animation: reveal-up 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
 }
 
 /**

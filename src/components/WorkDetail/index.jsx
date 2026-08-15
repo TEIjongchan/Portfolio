@@ -170,8 +170,9 @@ export default WorkDetail;
 
 const S = {
   Wrapper: styled.div`
-    color: #2b2b2f;
+    color: #ffffff;
     text-align: center;
+    background: #050505;
   `,
   ContentWrapper: styled.div`
     width: min(1200px, calc(100% - 48px));
@@ -194,15 +195,17 @@ const S = {
     }
   `,
   Name: styled.h1`
-    font-size: clamp(30px, 5vw, 36px);
-    font-weight: 600;
-    line-height: 1.25;
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 700;
+    line-height: 0.96;
+    letter-spacing: -0.055em;
   `,
   Text: styled.p`
     margin-top: 12px;
     font-size: clamp(17px, 2.5vw, 20px);
     font-weight: 400;
     line-height: 1.55;
+    color: rgba(255, 255, 255, 0.72);
 
     @media (max-width: 640px) {
       br {
@@ -214,12 +217,14 @@ const S = {
     margin-top: 12px;
     font-size: 18px;
     font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
   `,
   SmallText: styled.p`
     max-width: 760px;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.65;
+    color: rgba(255, 255, 255, 0.54);
   `,
   Toolbox: styled.div`
     display: flex;
@@ -240,7 +245,7 @@ const S = {
   Line: styled.hr`
     width: 24px;
     height: 2px;
-    background: #e8e8e8;
+    background: rgba(255, 255, 255, 0.12);
   `,
   GameDesc: styled.div`
     display: flex;
@@ -262,8 +267,10 @@ const S = {
     gap: 24px;
 
     > span {
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: rgba(255, 255, 255, 0.4);
     }
 
     img {
@@ -275,9 +282,9 @@ const S = {
     display: grid;
     grid-template-columns: ${({ viewType }) =>
       viewType === "vertical"
-        ? "repeat(3, minmax(0, 1fr))"
+        ? "repeat(4, minmax(0, 1fr))"
         : "repeat(2, minmax(0, 1fr))"};
-    gap: 32px 24px;
+    gap: 40px 20px;
     margin-top: 140px;
 
     @media (max-width: 900px) {
@@ -300,25 +307,27 @@ const S = {
     text-align: center;
 
     span {
-      font-size: clamp(16px, 2vw, 20px);
+      font-size: clamp(13px, 1.5vw, 16px);
       font-weight: 300;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.48);
     }
 
     &:hover img {
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+      transform: scale(1.05);
     }
 
     &:focus-visible {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid #ffffff;
       outline-offset: 6px;
     }
   `,
   GameImage: styled.img`
-    width: ${({ viewType }) => (viewType === "vertical" ? "65%" : "100%")};
+    width: 100%;
     height: auto;
-    background: #ededed;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #0a0a0a;
+    transition: transform 2s cubic-bezier(0.22, 1, 0.36, 1);
 
     @media (max-width: 680px) {
       width: ${({ viewType }) => (viewType === "vertical" ? "78%" : "100%")};
@@ -327,7 +336,8 @@ const S = {
   HistorySection: styled.section`
     width: 100%;
     padding: 120px 24px 160px;
-    background: #f6f6f6;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 
     @media (max-width: 768px) {
       padding: 88px 16px 104px;
@@ -364,7 +374,7 @@ const S = {
   HistoryLine: styled.hr`
     width: 2px;
     height: 100%;
-    background: #d9d9d9;
+    background: rgba(255, 255, 255, 0.1);
 
     @media (max-width: 768px) {
       width: 40px;
@@ -412,8 +422,9 @@ const S = {
 
     button {
       padding: 12px 18px;
-      border: 1px solid #1e1e1e;
-      border-radius: 4px;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
     }
   `,
 };

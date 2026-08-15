@@ -10,7 +10,12 @@ export default function Home() {
     let resetTimer;
 
     const handleWheel = (event) => {
-      if (event.deltaY <= 0 || window.scrollY > 4 || isScrolling.current) {
+      if (
+        window.innerWidth <= 768 ||
+        event.deltaY <= 0 ||
+        window.scrollY > 4 ||
+        isScrolling.current
+      ) {
         return;
       }
 

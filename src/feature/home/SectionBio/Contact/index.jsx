@@ -35,14 +35,17 @@ const S = {
   ContactWrapper: styled.div`
     display: flex;
     flex-direction: column;
-    color: #1e1e1e;
+    color: #ffffff;
     text-align: left;
     width: 100%;
   `,
   Title: styled.p`
-    font-weight: 200;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 10px;
     line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
   `,
   Email: styled.span`
     display: flex;
@@ -56,10 +59,12 @@ const S = {
     img {
       width: 24px;
       height: 24px;
+      filter: brightness(0) invert(1);
+      opacity: 0.72;
     }
 
     a:focus-visible {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid #ffffff;
       outline-offset: 4px;
     }
 
@@ -73,19 +78,19 @@ const S = {
     font-size: 20px;
     font-weight: 200;
     line-height: 24px;
-    color: #2b2b2f;
+    color: rgba(255, 255, 255, 0.6);
     align-items: center;
     margin-top: 60px;
 
     a:focus-visible {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid #ffffff;
       outline-offset: 4px;
     }
 
     hr {
       width: 2px;
       height: 20px;
-      background: rgba(43, 43, 47, 0.1);
+      background: rgba(255, 255, 255, 0.1);
       margin: 0;
       margin: 0 24px;
     }

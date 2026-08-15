@@ -8,26 +8,27 @@ export const S = {
     z-index: 100;
     width: 100%;
     height: 180px;
-    background: rgba(246, 246, 246, 0.96);
+    background: rgba(5, 5, 5, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(14px);
     transition: height 0.25s ease, background-color 0.25s ease;
 
-    ${({ isMain, isSticky }) =>
-      isMain &&
+    ${({ $isMain, $isSticky }) =>
+      $isMain &&
       css`
         position: fixed;
-        background: ${isSticky ? "rgba(246, 246, 246, 0.96)" : "transparent"};
-        backdrop-filter: ${isSticky ? "blur(14px)" : "none"};
+        background: ${$isSticky ? "rgba(5, 5, 5, 0.9)" : "transparent"};
+        backdrop-filter: ${$isSticky ? "blur(14px)" : "none"};
       `}
 
-    ${({ isSticky }) =>
-      isSticky &&
+    ${({ $isSticky }) =>
+      $isSticky &&
       css`
         height: 80px;
       `}
 
     @media (max-width: 768px) {
-      height: ${({ isSticky }) => (isSticky ? "64px" : "96px")};
+      height: ${({ $isSticky }) => ($isSticky ? "64px" : "96px")};
     }
   `,
   Menu: styled.ul`
@@ -36,14 +37,14 @@ export const S = {
     width: min(588px, 100%);
     height: 100%;
     margin: 0 auto;
-    padding: ${({ isSticky }) => (isSticky ? "0 16px" : "24px 16px")};
+    padding: ${({ $isSticky }) => ($isSticky ? "0 16px" : "24px 16px")};
 
     li {
       min-width: 0;
     }
 
     @media (max-width: 768px) {
-      padding: ${({ isSticky }) => (isSticky ? "0 8px" : "12px 8px")};
+      padding: ${({ $isSticky }) => ($isSticky ? "0 8px" : "12px 8px")};
     }
   `,
   MenuItem: styled.a`
@@ -54,18 +55,21 @@ export const S = {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    color: ${({ isDark }) => (isDark ? "#2b2b2f" : "#ffffff")};
-    opacity: ${({ isSelected }) => (isSelected ? 1 : 0.48)};
+    color: #ffffff;
+    opacity: ${({ $isSelected }) => ($isSelected ? 1 : 0.48)};
     transition: opacity 0.2s ease, transform 0.2s ease;
 
     img {
       width: 32px;
       height: 32px;
+      filter: brightness(0) invert(1);
     }
 
     span {
-      font-size: 20px;
-      font-weight: 300;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
     &:hover {

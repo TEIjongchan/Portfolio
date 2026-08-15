@@ -1,11 +1,11 @@
 export const PORTFOLIO_CONSTANT = [
   {
-    name: "다크판타지 RPG 컨셉",
-    genre: ["콘솔", "다크판타지", "RPG"],
+    name: "다크 판타지 RPG 콘셉트",
+    genre: ["콘솔", "다크 판타지", "RPG"],
     date: "23.05. - 23.08.",
     listDescription: "",
     description:
-      "게임 ‘킹아서 나이츠 테일’을 디스토피아적인 분위기의 RPG로서 재해석하여 제작하였습니다.",
+      "게임 ‘킹 아서: 나이츠 테일’을 디스토피아적인 분위기의 RPG로 재해석하여 제작했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -17,14 +17,14 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다.<br/>영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다.<br/>영상이 표시되지 않으면 새로고침해 주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
     detailImage: [
       {
         url: "/images/portfolio/King/King_0.png",
-        text: "메인화면",
+        text: "메인 화면",
         type: "horizontal",
       },
       {
@@ -74,19 +74,19 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/King/King_10.webp",
-        text: "보스처치연출",
+        text: "보스 처치 연출",
         type: "horizontal",
       },
     ],
   },
 
   {
-    name: "서브컬처 RPG 컨셉",
+    name: "서브컬처 RPG 콘셉트",
     genre: ["콘솔", "서브컬처", "RPG"],
     date: "23.03. - 23.05.",
     listDescription: "",
     description:
-      "서브컬처 게임인 ‘워더링 웨이브’를 컨셉으로 어두운느낌의 기계적인 연출을 강조하여 제작하였습니다.",
+      "서브컬처 게임인 ‘워더링 웨이브’를 콘셉트로 삼아 어둡고 기계적인 연출을 강조하여 제작했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -98,14 +98,14 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
     detailImage: [
       {
         url: "/images/portfolio/WhtheringWaves/WhtheringWaves_0.webp",
-        text: "메인화면",
+        text: "메인 화면",
         type: "horizontal",
       },
       {
@@ -150,19 +150,19 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/WhtheringWaves/WhtheringWaves_9.webp",
-        text: "스킬사용",
+        text: "스킬 사용",
         type: "horizontal",
       },
     ],
   },
 
   {
-    name: "데몬즈소울 모바일",
-    genre: ["모바일", "다크판타지", "RPG"],
+    name: "데몬즈 소울 모바일",
+    genre: ["모바일", "다크 판타지", "RPG"],
     date: "21.11. - 22.02.",
     listDescription: "",
     description:
-      "어두운 분위기의 중세 판타지 콘솔 게임인 ‘데몬즈소울’ 을 모바일 형식으로 재해석 하여 제작하였습니다.",
+      "어두운 분위기의 중세 판타지 콘솔 게임인 ‘데몬즈 소울’을 모바일 형식으로 재해석하여 제작했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -174,7 +174,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -186,7 +186,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/Demon'sSouls/Demon's Souls_1.png",
-        text: "메인화면",
+        text: "메인 화면",
         type: "horizontal",
       },
       {
@@ -196,12 +196,12 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/Demon'sSouls/Demon's Souls_1_1.webp",
-        text: "보스처치",
+        text: "보스 처치",
         type: "horizontal",
       },
       {
         url: "/images/portfolio/Demon'sSouls/Demon's Souls_2_2.webp",
-        text: "스테이지선택",
+        text: "스테이지 선택",
         type: "horizontal",
       },
       {
@@ -253,7 +253,7 @@ export const PORTFOLIO_CONSTANT = [
     date: "21.07. - 22.10.",
     listDescription: "",
     description:
-      "SF 서브컬처 장르의 콘솔 게임인 ‘스칼렛 스트랭스’ 를 모바일 형식으로 재해석 하여 제작하였습니다.",
+      "SF 서브컬처 장르의 콘솔 게임인 ‘스칼렛 넥서스’를 모바일 형식으로 재해석하여 제작했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -265,7 +265,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -277,7 +277,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/ScarletNexus/Scarlet Nexus_1.png",
-        text: "메인화면",
+        text: "메인 화면",
         type: "horizontal",
       },
       {
@@ -287,12 +287,12 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/ScarletNexus/Scarlet Nexus_3.png",
-        text: "캐릭터정보",
+        text: "캐릭터 정보",
         type: "horizontal",
       },
       {
         url: "/images/portfolio/ScarletNexus/Scarlet Nexus_4.webp",
-        text: "스테이지선택",
+        text: "스테이지 선택",
         type: "horizontal",
       },
       {
@@ -304,115 +304,12 @@ export const PORTFOLIO_CONSTANT = [
   },
 
   {
-    name: "뱀파이어서바이벌",
-    genre: ["캐주얼", "뱀파이어서바이벌", "사이드"],
-    date: "23.02. - 23.05.",
-    listDescription: "",
-    description:
-      "유행하는 게임인 ‘뱀파이어 서바이벌’의 룰을 따라 만들어 제작해 보았습니다.",
-    iconUrl: [
-      "/images/icon/Icon_Tool_Unity.png",
-      "/images/icon/Icon_Tool_Ps.png",
-      "/images/icon/Icon_Tool_Ai.png",
-    ],
-    imageUrl: [
-      "/images/portfolio/SlimeSurvival/SlimeSurvival.webp",
-      "/images/portfolio/SlimeSurvival/SlimeSurvival_0.png",
-      "/images/portfolio/SlimeSurvival/SlimeSurvival_1.png",
-      "/images/portfolio/SlimeSurvival/SlimeSurvival_2.png",
-    ],
-    type: "vertical",
-    // detail page
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
-    // keyword: ["가로형", "다크판타지", "RPG"],
-    // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
-    // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
-    detailImage: [
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival.webp",
-        text: "영상",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_0.png",
-        text: "로딩화면",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_1.png",
-        text: "메인화면",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_2.png",
-        text: "인게임",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_3.png",
-        text: "장비창",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_4.png",
-        text: "상점",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_5.png",
-        text: "뽑기",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_6.png",
-        text: "게임패스",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_7.png",
-        text: "인앱패스",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_8.png",
-        text: "이벤트",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_9.png",
-        text: "옵션",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_10.png",
-        text: "공지",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_11.png",
-        text: "우편_1",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_12.png",
-        text: "우편_2",
-        type: "vertical",
-      },
-      {
-        url: "/images/portfolio/SlimeSurvival/SlimeSurvival_13.png",
-        text: "피로도",
-        type: "vertical",
-      },
-    ],
-  },
-
-  {
-    name: "1:1 전략게임",
+    name: "1:1 전략 게임",
     genre: ["대전", "캐주얼", "사이드"],
     date: "21.01. - 22.05.",
     listDescription: "",
     description:
-      "1대1 전략 디펜스 오토배틀 게임러 장르의 게임으로서 케주얼한 분위기를 강조하였습니다.",
+      "1:1 전략 디펜스 오토 배틀 장르의 게임으로, 캐주얼한 분위기를 강조했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -426,7 +323,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "vertical",
     // detail page
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
@@ -438,7 +335,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/CrystalBreak/Crystal Brea_0.png",
-        text: "로딩화면_1",
+        text: "로딩 화면 1",
         type: "vertical",
       },
       {
@@ -453,7 +350,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/CrystalBreak/Crystal Brea_3.png",
-        text: "로딩화면_2",
+        text: "로딩 화면 2",
         type: "vertical",
       },
       {
@@ -540,12 +437,12 @@ export const PORTFOLIO_CONSTANT = [
   },
 
   {
-    name: "콘솔 레인보우식스",
-    genre: ["콘솔", "FPS", "레인보우식스"],
+    name: "콘솔 레인보우 식스",
+    genre: ["콘솔", "FPS", "레인보우 식스"],
     date: "19.02. - 19.04.",
     listDescription: "",
     description:
-      "근미래적인 느낌의 비주얼을 컨셉으로 잡고, 콘솔키 대응을 생각하여 제작하였습니다.",
+      "근미래적인 비주얼을 콘셉트로 삼고, 콘솔 키 조작을 고려하여 제작했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
@@ -568,7 +465,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/RainBowSix/RainBow Six_1.png",
-        text: "메인화면",
+        text: "메인 화면",
         type: "horizontal",
       },
       {
@@ -583,7 +480,7 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/RainBowSix/RainBow Six_4.png",
-        text: "결과화면",
+        text: "결과 화면",
         type: "horizontal",
       },
       {
@@ -595,12 +492,12 @@ export const PORTFOLIO_CONSTANT = [
   },
 
   {
-    name: "다크소울RPG",
-    genre: ["PC", "RPG", "다크소울"],
+    name: "다크 소울 RPG",
+    genre: ["PC", "RPG", "다크 소울"],
     date: "18.08. - 18.10.",
     listDescription: "",
     description:
-      "중세판타지 느낌의 PC게임을 컨셉으로 UIUX 뿐만 아니라 디테일한 아이콘의 품질 또한 고려하여 제작하였습니다.",
+      "중세 판타지 분위기의 PC 게임을 콘셉트로 삼아 UI/UX뿐만 아니라 세밀한 아이콘의 품질까지 고려하여 제작했습니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Ps.png",
       "/images/icon/Icon_Tool_Ai.png",
@@ -628,12 +525,12 @@ export const PORTFOLIO_CONSTANT = [
       },
       {
         url: "/images/portfolio/RPGPortfolio/RPG Portfolio_2.png",
-        text: "UI설명_1",
+        text: "UI 설명 1",
         type: "horizontal",
       },
       {
         url: "/images/portfolio/RPGPortfolio/RPG Portfolio_3.png",
-        text: "UI설명_2",
+        text: "UI 설명 2",
         type: "horizontal",
       },
       {

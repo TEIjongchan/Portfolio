@@ -37,7 +37,8 @@ const S = {
     align-items: center;
     justify-content: center;
     padding: 160px 0;
-    background: #f6f6f6;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 
     @media (max-width: 768px) {
       padding: 96px 16px;
@@ -51,11 +52,15 @@ const S = {
   HistoryContent: styled.div`
     text-align: center;
     width: min(720px, calc(100vw - 32px));
-    color: #1e1e1e;
+    color: #ffffff;
 
     .title {
       margin-bottom: 40px;
-      font-size: 20px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
     }
   `,
   HistoryList: styled.ul`
@@ -72,7 +77,7 @@ const S = {
       grid-template-columns: 1fr;
       gap: 8px;
       padding-bottom: 24px;
-      border-bottom: 1px solid #d9d9d9;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
       hr {
         display: none;
@@ -93,7 +98,7 @@ const S = {
       margin: 0;
       margin: 0 11px;
 
-      background: #d9d9d9;
+      background: rgba(255, 255, 255, 0.12);
     }
     span {
       display: block;
@@ -103,7 +108,7 @@ const S = {
       /* identical to box height */
       margin-bottom: 16px;
 
-      color: #1e1e1e;
+      color: rgba(255, 255, 255, 0.58);
 
       &:nth-last-child(1) {
         margin: 0;

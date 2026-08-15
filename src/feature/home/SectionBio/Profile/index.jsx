@@ -29,22 +29,25 @@ export default Profile;
 
 const S = {
   Profile: styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
     align-items: flex-start;
     justify-content: center;
-    color: #1e1e1e;
+    color: #ffffff;
     gap: 64px;
 
     @media (max-width: 768px) {
+      display: flex;
       flex-direction: column;
       align-items: center;
       gap: 40px;
     }
   `,
   ProfileImg: styled.img`
-    width: 256px;
-    height: 256px;
+    width: 270px;
+    height: 270px;
     object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
     @media (max-width: 768px) {
       width: 200px;
@@ -55,31 +58,39 @@ const S = {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    min-width: 0;
+    padding-top: 4px;
 
     @media (max-width: 768px) {
       width: 100%;
+      padding-top: 0;
     }
   `,
   Name: styled.p`
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 38px;
+    font-family: 'Clash Display', 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 0.94;
+    letter-spacing: -0.05em;
   `,
   Job: styled.span`
     font-weight: 400;
-    font-size: 24px;
+    font-size: 11px;
     line-height: 29px;
     margin-top: 16px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
   `,
   Title: styled.h1`
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 52px);
+    line-height: 1.08;
+    color: #ffffff;
 
-    color: #1e1e1e;
-
-    margin-bottom: 24px;
-    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-top: 28px;
 
     @media (max-width: 768px) {
       margin-top: 44px;
@@ -88,11 +99,11 @@ const S = {
     }
   `,
   SubTitle: styled.span`
-    font-weight: 200;
+    max-width: 720px;
+    font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
-
-    color: #1e1e1e;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.68);
 
     @media (max-width: 768px) {
       font-size: 17px;
@@ -107,6 +118,6 @@ const S = {
     width: 24px;
     height: 2px;
     margin: 48px 0;
-    background-color: #d9d9d9;
+    background-color: rgba(255, 255, 255, 0.18);
   `,
 };

@@ -56,6 +56,7 @@ const S = {
     width: min(1200px, calc(100% - 48px));
     margin: 0 auto;
     padding: 120px 0 240px;
+    color: #ffffff;
 
     @media (max-width: 768px) {
       width: min(calc(100% - 32px), 640px);
@@ -65,8 +66,8 @@ const S = {
   Card: styled(motion.a)`
     display: flex;
     position: relative;
-    gap: 32px;
-    color: #1e1e1e;
+    gap: 56px;
+    color: #ffffff;
     cursor: pointer;
 
     &::before {
@@ -74,7 +75,7 @@ const S = {
       position: absolute;
       inset: 0 auto 0 -24px;
       width: 4px;
-      background: #1e1e1e;
+      background: #ffffff;
       opacity: 0;
       transform: scaleY(0.6);
       transition: opacity 0.2s ease, transform 0.2s ease;
@@ -86,8 +87,13 @@ const S = {
       transform: scaleY(1);
     }
 
+    &:hover > div:last-child img {
+      transform: scale(1.05);
+      filter: saturate(1.08);
+    }
+
     &:focus-visible {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid #ffffff;
       outline-offset: 12px;
     }
 
@@ -98,20 +104,34 @@ const S = {
   `,
   Info: styled.div`
     display: flex;
-    min-width: 260px;
+    min-width: 360px;
     flex-direction: column;
     gap: 8px;
 
     h1 {
-      font-size: clamp(26px, 3vw, 32px);
-      font-weight: 500;
-      line-height: 1.25;
+      font-size: clamp(28px, 2.5vw, 36px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.055em;
+      white-space: nowrap;
     }
 
     p {
-      font-size: clamp(16px, 2vw, 20px);
-      font-weight: 300;
-      line-height: 1.4;
+      font-size: clamp(13px, 1.2vw, 15px);
+      font-weight: 400;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.58);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      width: 100%;
+      min-width: 0;
+
+      h1 {
+        font-size: clamp(20px, 5.8vw, 36px);
+      }
     }
   `,
   ImageWrapper: styled.div`
@@ -123,6 +143,7 @@ const S = {
     gap: 24px;
     width: min(792px, 100%);
     margin-left: auto;
+    overflow: hidden;
 
     @media (max-width: 560px) {
       grid-template-columns: ${({ viewType }) =>
@@ -138,7 +159,10 @@ const S = {
     aspect-ratio: ${({ viewType }) =>
       viewType === "vertical" ? "9 / 16" : "16 / 9"};
     object-fit: cover;
-    background: #ededed;
+    background: #0a0a0a;
+    transition: transform 2s cubic-bezier(0.22, 1, 0.36, 1), filter 2s ease;
+    filter: saturate(0.86);
+
   `,
   IconWrapper: styled.div`
     display: flex;
@@ -154,8 +178,8 @@ const S = {
   `,
   Divider: styled.hr`
     width: 100%;
-    height: 2px;
-    margin: 48px 0;
-    background: #d9d9d9;
+    height: 1px;
+    margin: 72px 0;
+    background: rgba(255, 255, 255, 0.11);
   `,
 };

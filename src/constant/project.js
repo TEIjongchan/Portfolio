@@ -18,9 +18,9 @@ export const PROJECT_CONSTANT = [
     ],
     type: "horizontal",
     source:
-      "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+      "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     detailImage: [
-      ["0.png", "메인화면"],
+      ["0.png", "메인 화면"],
       ["1.png", "거래화면"],
       ["2.png", "보급의뢰"],
       ["3.png", "제작관리"],
@@ -32,12 +32,12 @@ export const PROJECT_CONSTANT = [
       ["7.png", "염색"],
       ["7_1.webp", "외형합성"],
       ["8.png", "수집효과 팝업"],
-      ["9.png", "결제팝업"],
-      ["10.png", "합성확률팝업"],
+      ["9.png", "결제 팝업"],
+      ["10.png", "합성 확률 팝업"],
       ["11.png", "투기장"],
       ["12.png", "투기장 HUD 1"],
       ["13.png", "투기장 HUD 2"],
-      ["14.png", "시즌보상팝업"],
+      ["14.png", "시즌 보상 팝업"],
       ["15.png", "게임 네비게이터"],
       ["16.png", "설정"],
       ["모바일_0.png", "모바일 HUD"],
@@ -76,11 +76,11 @@ export const PROJECT_CONSTANT = [
                 type: "text",
               },
               {
-                text: "하나의 언리얼 위젯파일로 다해상도를 최대한 대응가능하게 하는 프로젝트 경험을 배웠습니다.",
+                text: "하나의 언리얼 위젯 파일로 다양한 해상도에 최대한 대응하는 방법을 배웠습니다.",
                 type: "text",
               },
               {
-                text: "MMORPG의 다양한 컨텐츠 시스템과 서로 상호작용 연결되는 UIUX설계를 배웠습니다.",
+                text: "MMORPG의 다양한 콘텐츠 시스템과 서로 연결되어 상호작용하는 UI/UX 설계를 배웠습니다.",
                 type: "text",
               },
             ],
@@ -97,7 +97,7 @@ export const PROJECT_CONSTANT = [
     date: "2022.11 ~ 2023.08",
     listDescription: "",
     description:
-      "'크로노 오디세이'는 언리얼 기반으로 제작된 게임으로서<br/>PC 뿐만 아니라 콘솔도 지원하는 것을 목표로 하는 대규모 MMORPG 입니다.",
+      "‘크로노 오디세이’는 언리얼 엔진을 기반으로 제작되었으며,<br/>PC뿐만 아니라 콘솔 지원을 목표로 하는 대규모 MMORPG입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -109,27 +109,27 @@ export const PROJECT_CONSTANT = [
     ],
     type: "horizontal",
     source:
-      "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+      "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     detailImage: [
-      ["0.png", "메인화면"],
+      ["0.png", "메인 화면"],
       ["1.png", "캐릭터 선택창"],
-      ["2.png", "로딩화면"],
+      ["2.png", "로딩 화면"],
       ["3.png", "전투(보스게이지)"],
       ["4.png", "퀘스트노티"],
       ["5.png", "데미지 폰트"],
       ["6.png", "캐릭터 정보"],
-      ["7.png", "아이템정보"],
+      ["7.png", "아이템 정보"],
       ["8.png", "대화"],
       ["9.png", "콘솔UI 대응"],
       ["10.png", "크로노텍터창"],
       ["11.png", "스킬"],
-      ["12.webp", "대화연출"],
-      ["13.webp", "스킬해금연출"],
+      ["12.webp", "대화 연출"],
+      ["13.webp", "스킬 해금 연출"],
       ["14.webp", "데미지폰트연출"],
-      ["15.webp", "월드해금연출"],
-      ["16.webp", "퀘스트완료"],
-      ["17.webp", "보스게이지연출"],
-      ["18.webp", "무기교체 HUD연출"],
+      ["15.webp", "월드 해금 연출"],
+      ["16.webp", "퀘스트 완료"],
+      ["17.webp", "보스 게이지 연출"],
+      ["18.webp", "무기 교체 HUD 연출"],
       ["19.webp", "크로노텍터창 오픈연출"],
     ].map(([file, text]) => ({
       url: `/images/project/Chrono/${file}`,
@@ -164,13 +164,13 @@ export const PROJECT_CONSTANT = [
             title: "언리얼 프로젝트 숙련도 향상",
             content: [
               {
-                text: "유니티에서 언리얼로 넘어오는 과정에서 RPG라는 장르에 처음 진입하다 보니 숙련도가 많이 향상되었습니다. 프로젝트 진행 도중 발생했던 인력감축으로 인한 업무량의 증가를 충실히 수행하여 프로젝트의 진행도에 차질 없이 대응할 수 있었습니다.",
+                text: "유니티에서 언리얼 엔진으로 전환하고 RPG 장르에 처음 진입하는 과정에서 숙련도가 크게 향상되었습니다. 프로젝트 진행 중 인력 감축으로 업무량이 늘어난 상황에서도 맡은 업무를 충실히 수행하여 일정에 차질 없이 대응했습니다.",
                 type: "text",
               },
             ],
           },
           {
-            title: "콘솔 기반 UIUX 숙달",
+            title: "콘솔 기반 UI/UX 숙달",
             content: [
               {
                 text: "RPG 장르를 콘솔로 즐길 수 있도록 만들어야 했기에 다른 플랫폼과는 차별화된 UI에 대한 지식을 습득하였습니다.",
@@ -199,7 +199,7 @@ export const PROJECT_CONSTANT = [
     date: "2021.03-2021.11",
     listDescription: "",
     description:
-      "'갤러리 루이스'는 등급을 올려서 다양한 사람과 경쟁하고<br/>참신한 아이템들을 수집할 수 있는 드랍 매치 퍼즐게임입니다.",
+      "‘갤러리 루이스’는 등급을 올리며 다양한 사람과 경쟁하고,<br/>참신한 아이템을 수집할 수 있는 드롭 매치 퍼즐 게임입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -212,7 +212,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/GalleryLouis/Gallery Louis_3.gif",
     ],
     type: "vertical",
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     detailImage: [
       {
         // 1st
@@ -345,7 +345,7 @@ export const PROJECT_CONSTANT = [
           {
             title: "아트 총괄",
             content: [
-              { text: "아트리소스 전반 제작", type: "text" },
+              { text: "아트 리소스 전반 제작", type: "text" },
               { text: "마케팅 이미지 및 게임 소개 영상 제작", type: "text" },
             ],
           },
@@ -358,7 +358,7 @@ export const PROJECT_CONSTANT = [
             title: "연출 기술 숙련",
             content: [
               {
-                text: "유니티의 파티클시스템이 가진 다양한 기능과 설정을 숙지하고, 다양한 빛 연출을 자유롭게 구현하는 데 능숙하게 되었으며 창의적인 아이디어를 활용하여 독창적인 시각적 효과를 구현할 수 있게 되었습니다.",
+                text: "유니티 파티클 시스템의 다양한 기능과 설정을 익히고, 여러 빛 연출을 자유롭게 구현하는 데 능숙해졌습니다. 또한 창의적인 아이디어를 활용해 독창적인 시각 효과를 구현할 수 있게 되었습니다.",
                 type: "text",
               },
             ],
@@ -367,7 +367,7 @@ export const PROJECT_CONSTANT = [
             title: "연출과 심리학의 결합",
             content: [
               {
-                text: "화려하고 자극적인 연출을 통해 사람들의 원초적 감정을 자극하여 흥미를 더욱 끌게하면서 게임의 몰입도 향상에 기여할 수 있었습니다.",
+                text: "화려하고 역동적인 연출로 사용자의 흥미를 끌어 게임의 몰입도를 높이는 데 기여했습니다.",
                 type: "text",
               },
             ],
@@ -384,7 +384,7 @@ export const PROJECT_CONSTANT = [
     date: "2020.08-2021.03",
     listDescription: "",
     description:
-      "'아레나 고'는 1:1 시뮬레이션 게임으로<br/>귀엽고 특색있는 캐릭터와 다양한 무기를 조합하여 나만의 조합으로 상대방과의 전투를 즐기는 게임입니다.",
+      "‘아레나 고’는 1:1 시뮬레이션 게임으로,<br/>귀엽고 특색 있는 캐릭터와 다양한 무기를 조합해 상대와의 전투를 즐기는 게임입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -395,7 +395,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/ArenaGo/ArenaGo_Movie.webp",
     ],
     type: "horizontal",
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     detailImage: [
       {
         // 1st
@@ -549,7 +549,7 @@ export const PROJECT_CONSTANT = [
           {
             title: "아트 총괄",
             content: [
-              { text: "UIUX 전반 제작", type: "text" },
+              { text: "UI/UX 전반 제작", type: "text" },
               { text: "인게임 배경 전반 제작", type: "text" },
               { text: "캐릭터 스킨 다수 제작", type: "text" },
               { text: "모든 이펙트 제작", type: "text" },
@@ -562,10 +562,10 @@ export const PROJECT_CONSTANT = [
         name: "프로젝트를 통해 얻은 경험",
         list: [
           {
-            title: "디자인 컨셉에 맞는 아트 리소스 제작",
+            title: "디자인 콘셉트에 맞는 아트 리소스 제작",
             content: [
               {
-                text: "창의적인 캐릭터 컨셉을 바탕으로 독특하고 특색있는 아트리소스를 제작함으로서 더 다양하고 더 넓은 안목을 가지게 되었습니다.<br/>다른 아티스트들과의 교류를 통해서 새로운 시각적 아이디어를 얻고, 자신의 작업을 보완해 차별화된 아트 리소스를 제작할 수 있게 되었습니다.",
+                text: "창의적인 캐릭터 콘셉트를 바탕으로 독특하고 특색 있는 아트 리소스를 제작하면서 더욱 넓은 안목을 갖게 되었습니다.<br/>다른 아티스트들과 교류하며 새로운 시각적 아이디어를 얻고, 작업을 보완해 차별화된 아트 리소스를 제작할 수 있게 되었습니다.",
                 type: "text",
               },
             ],
@@ -582,7 +582,7 @@ export const PROJECT_CONSTANT = [
     date: "2019.01-2020.08",
     listDescription: "",
     description:
-      "'랜덤다이스'는 1:1 전략 디펜스를 모바일에 적합한 형태로 이식하여 사람들의 경쟁심리를 일깨우고 도전욕구를 자극하는 게임입니다.",
+      "‘랜덤 다이스’는 1:1 전략 디펜스를 모바일에 적합한 형태로 구현하여 사용자의 경쟁심과 도전 욕구를 자극하는 게임입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -595,7 +595,7 @@ export const PROJECT_CONSTANT = [
       "/images/project/RandomDice/Random Dice_2.png",
     ],
     type: "vertical",
-    source: "webp 포맷을 지원하는 브라우저로 열어주세요. 영상이 로드되는데 시간이 걸릴 수 있어 기다려주시면 감사하겠습니다. 영상이 표시되지 않는다면 새로고침을 해주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다. 영상이 표시되지 않으면 새로고침해 주세요.",
     detailImage: [
       {
         // 1st
@@ -664,7 +664,7 @@ export const PROJECT_CONSTANT = [
       {
         // 5th
         url: "/images/project/RandomDice/Random Dice_11.png",
-        text: "리디자인 - 메인화면",
+        text: "리디자인 - 메인 화면",
         type: "vertical",
       },
       {
@@ -800,10 +800,10 @@ export const PROJECT_CONSTANT = [
         name: "프로젝트를 통해 얻은 경험",
         list: [
           {
-            title: "게임 내 아트리소스 제작에 관한 전범위적인 이해",
+            title: "게임 내 아트 리소스 제작 전반에 대한 이해",
             content: [
               {
-                text: "소수 프로젝트 인원으로 시작하여 개개인의 역할이 중요한 프로젝트였기에 아트 리소스에 대한 전반적인 능력이 필요했고, 게임 내 아트 리소스들의 조화를 맞추는 능력이 향상 되었습니다.",
+                text: "소수 인원으로 시작해 구성원 각자의 역할이 중요한 프로젝트였기에 아트 리소스 전반에 대한 역량이 필요했고, 게임 내 아트 리소스의 조화를 맞추는 능력이 향상되었습니다.",
                 type: "text",
               },
             ],
@@ -812,7 +812,7 @@ export const PROJECT_CONSTANT = [
             title: "디자인 리소스 제작 일정 관리",
             content: [
               {
-                text: "개발자와 협업간에 충분한 커뮤니케이션을 통해 서로의 업무 일정에 맞는 스케쥴 관리에 능숙해졌고, 타 직군의 일정에 대한 이해도가 향상 되었습니다.",
+                text: "개발자와 협업하며 충분히 소통한 결과, 서로의 업무 일정에 맞춘 스케줄 관리에 능숙해졌고 다른 직군의 일정에 대한 이해도도 향상되었습니다.",
                 type: "text",
               },
             ],
@@ -821,7 +821,7 @@ export const PROJECT_CONSTANT = [
             title: "유저 피드백에 대한 즉각적인 대응",
             content: [
               {
-                text: "게임 출시 후 다양한 소통 창구에서 유저의 의견을 취합 후 추후 업데이트에 해당 피드백 내용을 반영하여 더 나은 게임으로 발전시킬 수 있었습니다.",
+                text: "게임 출시 후 다양한 소통 창구에서 사용자 의견을 취합하고 이후 업데이트에 반영하여 게임을 개선할 수 있었습니다.",
                 type: "text",
               },
             ],

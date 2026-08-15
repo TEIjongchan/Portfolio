@@ -45,7 +45,8 @@ export default Footer;
 const S = {
   Container: styled.footer`
     width: 100%;
-    background: #eaeaeb;
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
   `,
   Wrapper: styled.div`
     display: flex;
@@ -76,7 +77,7 @@ const S = {
     display: flex;
     flex-direction: column;
     margin-left: 48px;
-    color: #1e1e1e;
+    color: #ffffff;
 
     justify-content: end;
     gap: 8px;
@@ -106,8 +107,13 @@ const S = {
     margin-top: 24px;
     margin-bottom: 8px;
 
+    img {
+      filter: brightness(0) invert(1);
+      opacity: 0.72;
+    }
+
     &:focus-visible {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid #ffffff;
       outline-offset: 4px;
     }
 
@@ -149,13 +155,13 @@ const S = {
     font-size: 20px;
     font-weight: 200;
     line-height: 24px;
-    color: #2b2b2f;
+    color: rgba(255, 255, 255, 0.55);
     align-items: flex-end;
     margin-left: auto;
     margin-bottom: 8px;
 
     a:focus-visible {
-      outline: 2px solid #1e1e1e;
+      outline: 2px solid #ffffff;
       outline-offset: 4px;
     }
 
@@ -167,7 +173,7 @@ const S = {
     hr {
       width: 2px;
       height: 20px;
-      background: rgba(43, 43, 47, 0.1);
+      background: rgba(255, 255, 255, 0.1);
       margin: 0;
       margin: 0 24px;
     }
