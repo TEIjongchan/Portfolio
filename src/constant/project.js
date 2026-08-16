@@ -6,7 +6,7 @@ export const PROJECT_CONSTANT = [
     date: "2023.10 ~ 2025.11",
     listDescription: "",
     description:
-      "'아이온2'는 PC와 모바일 환경을 지원하는 대규모 MMORPG로,<br/>각 플랫폼에 맞는 UI·UX와 게임 플레이 경험을 제공하는 프로젝트입니다.",
+      "'아이온2'는 PC와 모바일 환경을 지원하는 대규모 MMORPG로,<br/> 각 플랫폼에 맞는 UI·UX와 게임 플레이 경험을 제공하는 프로젝트입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -97,7 +97,7 @@ export const PROJECT_CONSTANT = [
     date: "2022.11 ~ 2023.08",
     listDescription: "",
     description:
-      "‘크로노 오디세이’는 언리얼 엔진을 기반으로 제작되었으며,<br/>PC뿐만 아니라 콘솔 지원을 목표로 하는 대규모 MMORPG입니다.",
+      "‘크로노 오디세이’는 언리얼 엔진을 기반으로 제작되었으며,<br/> PC뿐만 아니라 콘솔 지원을 목표로 하는 대규모 MMORPG입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unreal.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -199,7 +199,7 @@ export const PROJECT_CONSTANT = [
     date: "2021.03-2021.11",
     listDescription: "",
     description:
-      "‘갤러리 루이스’는 등급을 올리며 다양한 사람과 경쟁하고,<br/>참신한 아이템을 수집할 수 있는 드롭 매치 퍼즐 게임입니다.",
+      "‘갤러리 루이스’는 등급을 올리며 다양한 사람과 경쟁하고,<br/> 참신한 아이템을 수집할 수 있는 드롭 매치 퍼즐 게임입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -384,7 +384,7 @@ export const PROJECT_CONSTANT = [
     date: "2020.08-2021.03",
     listDescription: "",
     description:
-      "‘아레나 고’는 1:1 시뮬레이션 게임으로,<br/>귀엽고 특색 있는 캐릭터와 다양한 무기를 조합해 상대와의 전투를 즐기는 게임입니다.",
+      "‘아레나 고’는 1:1 시뮬레이션 게임으로,<br/> 귀엽고 특색 있는 캐릭터와 다양한 무기를 조합해 상대와의 전투를 즐기는 게임입니다.",
     iconUrl: [
       "/images/icon/Icon_Tool_Unity.png",
       "/images/icon/Icon_Tool_Ps.png",
@@ -565,7 +565,7 @@ export const PROJECT_CONSTANT = [
             title: "디자인 콘셉트에 맞는 아트 리소스 제작",
             content: [
               {
-                text: "창의적인 캐릭터 콘셉트를 바탕으로 독특하고 특색 있는 아트 리소스를 제작하면서 더욱 넓은 안목을 갖게 되었습니다.<br/>다른 아티스트들과 교류하며 새로운 시각적 아이디어를 얻고, 작업을 보완해 차별화된 아트 리소스를 제작할 수 있게 되었습니다.",
+                text: "창의적인 캐릭터 콘셉트를 바탕으로 독특하고 특색 있는 아트 리소스를 제작하면서 더욱 넓은 안목을 갖게 되었습니다.<br/> 다른 아티스트들과 교류하며 새로운 시각적 아이디어를 얻고, 작업을 보완해 차별화된 아트 리소스를 제작할 수 있게 되었습니다.",
                 type: "text",
               },
             ],

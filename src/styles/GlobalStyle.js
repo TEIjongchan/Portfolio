@@ -37,7 +37,7 @@ export default createGlobalStyle`
  * 4. Remove the grey highlight on links in iOS (opinionated).
  * 5. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
- * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ * 6. Keep Korean words intact while still allowing long URLs to wrap.
  */
 
 html {
@@ -48,7 +48,9 @@ html {
   -webkit-tap-highlight-color: transparent /* 4 */;
   -ms-text-size-adjust: 100%; /* 5 */
   -webkit-text-size-adjust: 100%; /* 5 */
-  word-break: break-word; /* 6 */
+  word-break: keep-all; /* 6 */
+  overflow-wrap: break-word; /* 6 */
+  line-break: strict;
   scroll-behavior: smooth;
 }
 

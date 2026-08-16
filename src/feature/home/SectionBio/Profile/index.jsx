@@ -99,15 +99,20 @@ const S = {
     }
   `,
   SubTitle: styled.span`
-    max-width: 720px;
+    width: 100%;
     font-weight: 300;
     font-size: 20px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.68);
 
+    @media (min-width: 1100px) {
+      white-space: nowrap;
+    }
+
     @media (max-width: 768px) {
       font-size: 17px;
       line-height: 1.65;
+      white-space: normal;
 
       br {
         display: none;

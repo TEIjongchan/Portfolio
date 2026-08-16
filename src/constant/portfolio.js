@@ -17,7 +17,7 @@ export const PORTFOLIO_CONSTANT = [
     ],
     type: "horizontal",
     // detail page
-    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다.<br/>영상이 표시되지 않으면 새로고침해 주세요.",
+    source: "WebP 포맷을 지원하는 브라우저에서 열어주세요. 영상을 불러오는 데 시간이 걸릴 수 있습니다.<br/> 영상이 표시되지 않으면 새로고침해 주세요.",
     // keyword: ["가로형", "다크판타지", "RPG"],
     // keyShape: "/images/portfolio/ProjectCC/KeyShape_CC.png",
     // colorPalette: "/images/portfolio/ProjectCC/Color Palette_CC.png",
